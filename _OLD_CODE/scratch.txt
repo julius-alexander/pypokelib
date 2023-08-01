@@ -1,0 +1,48 @@
+# scripts - files intended to be run
+# modules - files intended to be imported
+# packages - directories containing modules
+# libraries - collections of packages
+# frameworks - collections of libraries
+
+
+
+
+
+p = PokeMon(name="Charmander")
+
+p.name == "Charmander"
+p.dexID == "4"
+p.gender == "M" or p.gender == "F"
+p.nickname == ""
+p.level == 1
+p.is_shiny is False
+p.nature == "Hasty"
+p.dmax_lvl == 1
+p.ability == "Ability"
+p.held_item == "Silk Scarf"
+p.hidden_power == ???
+p.stats == {  }
+
+
+Named Tuples
+=======================================================================================================================
+from collections import namedtuple
+
+syntax example:
+
+    Color = namedTuple('Color', ['red', 'green', 'blue'])
+    color = Color(55, 155, 255)
+
+    print(color['red'])         # prints "55" as int
+
+    # Same thing!
+    color2 = Color(red=55, blue=155, green=255)
+    print(color.red)
+
+
+potential uses:
+
+PokemonStats = namedTuple(
+    'PokemonStats',
+    ['hp', 'atk', 'def', 'spatk', 'spdef', 'spd']    
+)
