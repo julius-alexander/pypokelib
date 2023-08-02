@@ -1,5 +1,5 @@
 """Main series functions for calculating PokeMon stats"""
-# pylint: disable=line-too-long
+# pylint: disable=all
 
 from math import floor
 import OLD_CODE.new_poke_instance as npi
