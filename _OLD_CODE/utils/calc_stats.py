@@ -2,7 +2,7 @@
 # pylint: disable=line-too-long
 
 from math import floor
-import new_poke_instance as npi
+import OLD_CODE.new_poke_instance as npi
 
 
 # ? I think the following functions should be methods of PokeMon class, and possibly be combined

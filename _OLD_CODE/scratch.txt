@@ -42,7 +42,7 @@ syntax example:
 
 potential uses:
 
-PokemonStats = namedTuple(
-    'PokemonStats',
-    ['hp', 'atk', 'def', 'spatk', 'spdef', 'spd']    
+PokemonFacts = namedTuple(
+    'PokemonFacts',
+    ['species name', '', ]
 )

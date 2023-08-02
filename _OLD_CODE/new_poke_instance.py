@@ -19,11 +19,11 @@ class Move:
 class Stats:
     """"""
 
-    base_stats: dict[str, int]
+    base_stats:    dict[str, int]
     current_stats: dict[str, int]
-    current_ivs: dict[str, int]
-    current_evs: dict[str, int]
-    nature: str
+    current_ivs:   dict[str, int]
+    current_evs:   dict[str, int]
+    nature:        str
 
 
 @dataclass(frozen=False)
