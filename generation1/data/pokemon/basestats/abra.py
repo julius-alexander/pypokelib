@@ -1,47 +1,29 @@
 """Gimme a sec, I'm thinking..."""
-from typing import NamedTuple
-from dataclasses import dataclass, field
 
+# * Option 2 - Base Class for each Pokemon
+class Pokemon:
+    """Base Class for all Pokemon"""
 
-# * Option 1 - Standalone NamedTuple for each Pokemon
-# BasePokemon = NamedTuple(
-#     "BasePokemon",
-#     [
-#         ('name', str),
-#         ("base_stats", dict[str, int]),
-#         ("types", list[str]),
-#         ("base_exp", int),
-#         ("growth_rate", str),
-#         ("tmhm_learnset", list[str]),
-#     ],
-# )
+    def __init__(self, species_or_dex: str | int):
+        """Initialize the Pokemon class"""
+        if isinstance(species_or_dex, str):
+            self.__name = species_or_dex
+        elif isinstance(species_or_dex, int):
+            self.__dex_num = species_or_dex
+        else:
+            raise TypeError("Parameter must be of type str or int.")
 
-
-# * Option 2 - Dataclass for each Pokemon
-class BasePokemonClass:
-    def __init__(self) -> None:
-        """Base Class for all Pokemon"""
-        self.name: str
-        self.base_stats: dict[str, int]
-        self.types: list[str]
-        self.base_exp: int = 0
-        self.growth_rate: str = ""
-        self.tmhm_learnset: list[str]
-
-
-class Abra:
-    """Base Class for all Abra"""
-
-    def __init__(self):
         # intended to be used as "private variables"
+
         # ! REPLACE ALL OF THE FOLLOWING WITH CONSTANTS (EVENTUALLY)
         self.__dex_num = 63
-        self.__name = "Abra"
+        self.__name = ""
         self.__base_stats = {"hp": 25, "atk": 20, "def": 15, "spe": 90, "spc": 105}
         self.__types = ["Psychic", ""]
         self.__base_exp = 0
         self.__growth_rate = "Medium Slow"
         self.__tmhm_learnset = ["tm01", ..., "tm50"]
+        # ! REPLACE ALL OF THE FOLLOWING WITH CONSTANTS (EVENTUALLY)
 
         # default values, intended to be used as "public variables"
         self.level = 1
@@ -78,6 +60,26 @@ class Abra:
         """Return the TM/HM learnset of the Pokemon"""
         return self.__tmhm_learnset
 
+    def get_level(self):
+        """Return the level of the Pokemon"""
+        return self.level
+
+    def get_current_stats(self):
+        """Return the current stats of the Pokemon"""
+        return self.current_stats
+
+    def get_learned_moves(self):
+        """Return the learned moves of the Pokemon"""
+        return self.learned_moves
+
+    def get_current_moves(self):
+        """Return the current moves of the Pokemon"""
+        return self.current_moves
+
+    def get_nature(self):
+        """Return the nature of the Pokemon"""
+        return self.nature
+
     def __repr__(self) -> str:
         return (
             f"{self.__name} (Lv.{self.level})\n"
@@ -88,31 +90,3 @@ class Abra:
                      {self.current_moves[2]} {self.current_moves[3]}\n"
             f"TM/HM Learnset: {self.__tmhm_learnset}\n"
         )
-
-
-my_abra = Abra()
-print(my_abra)
-
-# Abra = BasePokemon(
-#     "Abra",
-#     {"hp": 25, "atk": 20, "def": 15, "spe": 90, "spc": 105},
-#     ["psychic"],
-#     0,
-#     "medium slow",
-#     ["tm01"],
-# )
-
-
-# uhhhh = {"hp": 25, "atk": 20, "def": 15, "spe": 90, "spc": 105}
-# my_abra = Abra(uhhhh, ["psychic"], 0, "medium slow", ["tm01"])
-
-# * Option 2 - One NamedTuple for all Pokemon
-# Pokemon = NamedTuple('Pokemon',
-#                      [
-#                         ('base_stats', Base_Stats),
-#                         ('types', list[str]),
-#                         ('base_exp', int),
-#                         ('growth_rate', str),
-#                         ('tmhm_learnset', list[str])
-#                     ]
-#                 )
