@@ -1,15 +1,8 @@
 """Pokemon Generation 1 look-up table, for constant time access to Pokemon data."""
 import sys
 sys.path.append("./generation1/constants")
-from typing import NamedTuple                   # pylint: disable=wrong-import-position
 import dex_consts as dc                         # pylint: disable=E0401, wrong-import-position
 
-
-# ? PokeNameNum only used to help DEX_HELPER_NUM_TO_STR,
-# ? But DEX_HELPER_NUM_TO_STR is only used to provide "symmetry"
-# ? to DEX_HELPER_STR_TO_NUM
-# ? In other words, get_mon() could call POKEDEX[dex_num] directly
-# ? rather than using DEX_HELPER_NUM_TO_STR as a middleman.
 
 DEX_HELPER_STR_TO_NUM = {
     "Bulbasaur": 1,
@@ -330,10 +323,4 @@ def get_mon(specname: str | int) -> str | int:
     raise TypeError("Invalid type given. Must be str or int.")
 
 
-# ? Do I actually need a helper function for NUM_TO_STR? I can just call
-# ? the dex_num on the full list of Pokemon/stats.
-
 # ! Fix directory/package structure!!!!
-
-# what if i do this
-# in fix-remove-dex-helper-str-to-num branch

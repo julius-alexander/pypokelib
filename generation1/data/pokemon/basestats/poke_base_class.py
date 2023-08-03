@@ -76,18 +76,3 @@ class Pokemon:
             f"{self.current_moves[2]} {self.current_moves[3]}\n" \
             f"TM/HM Learnset: {self._tmhm_learnset}\n"
         )
-
-
-def call_str():
-    time1 = time.time()
-    for i in range(500_000):
-        my_bulbasaur = Pokemon("Bulbasaur")
-    time2 = time.time()
-    return time2 - time1
-
-def call_int():
-    time1 = time.time()
-    for i in range(500_000):
-        my_bulbasaur = Pokemon(1)
-    time2 = time.time()
-    return time2 - time1
