@@ -1,6 +1,7 @@
 """Defines Pokemon class and its methods"""
 import sys
 import poke_lookup_table as plt
+import time
 
 sys.path.append("./generation1/constants")
 
@@ -77,5 +78,16 @@ class Pokemon:
         )
 
 
-my_bulbasaur = Pokemon("Bulbasaur")
-print(my_bulbasaur)
+def call_str():
+    time1 = time.time()
+    for i in range(500_000):
+        my_bulbasaur = Pokemon("Bulbasaur")
+    time2 = time.time()
+    return time2 - time1
+
+def call_int():
+    time1 = time.time()
+    for i in range(500_000):
+        my_bulbasaur = Pokemon(1)
+    time2 = time.time()
+    return time2 - time1
