@@ -493,7 +493,5 @@ def get_mon(specname: str | int) -> str | int:
 
 # ? Do I actually need a helper function for NUM_TO_STR? I can just call
 # ? the dex_num on the full list of Pokemon/stats.
-# ? 
 
-
-# ! Fix directory structure!!!!
+# ! Fix directory/package structure!!!!
