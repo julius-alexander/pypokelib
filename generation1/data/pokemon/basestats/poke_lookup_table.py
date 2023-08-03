@@ -495,3 +495,5 @@ def get_mon(specname: str | int) -> str | int:
 # ? the dex_num on the full list of Pokemon/stats.
 
 # ! Fix directory/package structure!!!!
+
+# what if i do this
