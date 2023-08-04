@@ -1,9 +1,5 @@
 {
-    "[python]": {
-        "editor.defaultFormatter": "ms-python.black-formatter"
-    },
-    "python.formatting.provider": "black",
     "python.analysis.extraPaths": [
-        "./generation1/constants"
+        "./pypokelib/generation1/constants/"
     ]
 }

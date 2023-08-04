@@ -1,0 +1,9 @@
+"filename", "language", "Python", "comment", "blank", "total"
+"/Users/johngarzon-ferrer/Desktop/VSPython/pypokelib/pypokelib/generation1/constants/dex_consts.py", "Python", 1233, 11, 5, 1249
+"/Users/johngarzon-ferrer/Desktop/VSPython/pypokelib/pypokelib/generation1/constants/move_consts.py", "Python", 0, 0, 1, 1
+"/Users/johngarzon-ferrer/Desktop/VSPython/pypokelib/pypokelib/generation1/data/moves/moves.py", "Python", 0, 0, 1, 1
+"/Users/johngarzon-ferrer/Desktop/VSPython/pypokelib/pypokelib/generation1/data/pokemon/basestats.py", "Python", 0, 0, 1, 1
+"/Users/johngarzon-ferrer/Desktop/VSPython/pypokelib/pypokelib/generation1/data/pokemon/basestats/poke_base_class.py", "Python", 49, 14, 15, 78
+"/Users/johngarzon-ferrer/Desktop/VSPython/pypokelib/pypokelib/generation1/data/pokemon/basestats/poke_lookup_table.py", "Python", 313, 4, 8, 325
+"/Users/johngarzon-ferrer/Desktop/VSPython/pypokelib/pypokelib/main.py", "Python", 0, 0, 1, 1
+"Total", "-", 1595, 29, 32, 1656
