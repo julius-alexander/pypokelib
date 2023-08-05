@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleaed] ========================================================================================================
 - Support for unique learnsets of all Pokemon
+- Include functionality between Pokemon and moves
 
 
 
