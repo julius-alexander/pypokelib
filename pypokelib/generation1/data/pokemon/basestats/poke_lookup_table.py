@@ -320,8 +320,3 @@ def get_mon(specname: str | int) -> str | int:
     if isinstance(specname, int):
         return POKEDEX[specname].name
     raise TypeError("Invalid type given. Must be str or int.")
-
-
-# ! Fix directory/package structure!!!!
-# ? Kind of fixed, but calling the import is hellish...
-# TODO: add .reset() method to reset pokemon instance stats

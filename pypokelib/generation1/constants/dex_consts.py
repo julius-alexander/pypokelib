@@ -8,6 +8,7 @@ growth_rate: str
 tmhm_learnset: list[str]
 """  # pylint: disable=too-many-lines
 from typing import NamedTuple
+from pypokelib.generation1.data.moves import moves
 
 BaseStats = NamedTuple(
     "BaseStats",
@@ -37,6 +38,7 @@ FullPokeEntry = NamedTuple(
 # ! CHANGE LEARNSETS TO ACTUAL LEARNABLE MOVES
 # ! CHANGE LEARNSETS TO ACTUAL LEARNABLE MOVES
 # ! CHANGE LEARNSETS TO ACTUAL LEARNABLE MOVES
+# ! RECOMMENDATION: ASSIGN LEARNSETS REFERENCED IN A SEPARATE FILE
 
 BULBASAUR_DEX_ENTRY = FullPokeEntry(
     name="Bulbasaur",
