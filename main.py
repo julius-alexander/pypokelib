@@ -18,4 +18,4 @@ my_party.append(p5)
 my_party.append(p6)
 
 for pokemon in my_party:
-    print(f"{pokemon}\n")
+    print(f"{pokemon}")
