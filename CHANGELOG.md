@@ -20,6 +20,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Fixed
 - Hellish imports à la Java. No more "from pypokelib.generation1.data.pokemon.basestats.poke_base_class import Pokemon"
 
+## Added
+- Not really *added* but started work on moves and movesets. Much more to come
+
 ## [0.1.0] - 2023-08-03 ===============================================================================================
 
 ### Added
