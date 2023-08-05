@@ -8,7 +8,7 @@ growth_rate: str
 tmhm_learnset: list[str]
 """  # pylint: disable=too-many-lines
 from typing import NamedTuple
-from pypokelib.generation1.data.moves import moves
+from pypokelib.generation1.data.moves import move_learnsets
 
 BaseStats = NamedTuple(
     "BaseStats",
