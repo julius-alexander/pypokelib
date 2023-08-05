@@ -6,6 +6,8 @@ Example: 43 & 3 == 3, so the Pokemon can learn the move represented by 3. """
 from pypokelib.generation1.constants import move_consts as mc
 
 # there are 165 moves in Generation 1, so we need numbers 1-165
+# * STRUGGLE is not LEARNABLE! But it is a move, technically.
+# * Every Pokemon can use USE struggle, if and only if they have 0 PP on every other move.
 LEARNABLE_MOVES = {
     1: mc.ABSORB,
     2: mc.ACID,
