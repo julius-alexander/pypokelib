@@ -8,7 +8,8 @@ growth_rate: str
 tmhm_learnset: list[str]
 """  # pylint: disable=too-many-lines
 from typing import NamedTuple
-from pypokelib.generation1.data.moves import move_learnsets
+from pypokelib.generation1.data.moves import move_learnsets as ml
+from pypokelib.generation1.constants.move_consts import BaseMoves
 
 BaseStats = NamedTuple(
     "BaseStats",
@@ -31,7 +32,7 @@ FullPokeEntry = NamedTuple(
         ("types", list[str]),
         ("base_exp", int),
         ("growth_rate", str),
-        ("tmhm_learnset", list[str]),
+        ("tmhm_learnset", tuple[BaseMoves]),
     ],
 )
 
@@ -44,9 +45,9 @@ MISSINGNO_ENTRY = FullPokeEntry(
     name="MissingNo.",
     base_stats=BaseStats(0, 0, 0, 0, 0, 0, 0),
     types=["Bird", "Normal"],
-    base_exp=0,
-    growth_rate="Medium Fast",
-    tmhm_learnset=["TM01"],
+    base_exp=None,
+    growth_rate=None,
+    tmhm_learnset=None,
 )
 BULBASAUR_DEX_ENTRY = FullPokeEntry(
     name="Bulbasaur",
@@ -54,7 +55,7 @@ BULBASAUR_DEX_ENTRY = FullPokeEntry(
     types=["Grass", "Poison"],
     base_exp=64,
     growth_rate="Medium Slow",
-    tmhm_learnset=["TM01"],
+    tmhm_learnset=ml.BULBASAUR_LEARNSET
 )
 IVYSAUR_DEX_ENTRY = FullPokeEntry(
     name="Ivysaur",
@@ -62,7 +63,7 @@ IVYSAUR_DEX_ENTRY = FullPokeEntry(
     types=["Grass", "Poison"],
     base_exp=142,
     growth_rate="Medium Slow",
-    tmhm_learnset=["TM01"],
+    tmhm_learnset=ml.IVYSAUR_LEARNSET
 )
 VENUSAUR_DEX_ENTRY = FullPokeEntry(
     name="Venusaur",

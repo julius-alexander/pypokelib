@@ -33,7 +33,7 @@ class Pokemon:
         self.level = 1
         self.current_stats = self._base_stats
         self.learned_moves = POKEDEX[self._dex_num].tmhm_learnset[0]
-        self.current_moves = [POKEDEX[self._dex_num].tmhm_learnset, "-", "-", "-"]
+        self.current_moves = [POKEDEX[self._dex_num].tmhm_learnset[0], "-", "-", "-"]
         self.nature = "Hardy"
 
     def get_dex_num(self) -> int:
