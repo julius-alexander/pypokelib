@@ -40,6 +40,14 @@ FullPokeEntry = NamedTuple(
 # ! CHANGE LEARNSETS TO ACTUAL LEARNABLE MOVES
 # ! RECOMMENDATION: ASSIGN LEARNSETS REFERENCED IN A SEPARATE FILE
 
+MISSINGNO_ENTRY = FullPokeEntry(
+    name="MissingNo.",
+    base_stats=BaseStats(0, 0, 0, 0, 0, 0, 0),
+    types=["Bird", "Normal"],
+    base_exp=0,
+    growth_rate="Medium Fast",
+    tmhm_learnset=["TM01"],
+)
 BULBASAUR_DEX_ENTRY = FullPokeEntry(
     name="Bulbasaur",
     base_stats=BaseStats(318, 45, 49, 49, 65, 65, 45),
