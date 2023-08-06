@@ -4,6 +4,7 @@
 # Also, these learnsets do NOT differentiate between moves learnable by level up, TM, or HM
 # They simply list all moves that CAN be learned by the Pokemon
 
+from re import A
 from pypokelib.generation1.constants.move_consts import *
 
 # * Learnsets are "read-ony", so tuples are helpful here
@@ -227,4 +228,58 @@ RATTATA_LEARNSET = (
     TOXIC,                  # moves learnt by TM <--^
     WATER_GUN
 )
-RATICATE_LEARNSET = RATTATA_LEARNSET + (HYPER_BEAM)
+RATICATE_LEARNSET = RATTATA_LEARNSET + (HYPER_BEAM, ICE_BEAM)
+
+SPEAROW_LEARNSET = (
+    GROWL,
+    PECK,
+    LEER,
+    FURY_ATTACK,
+    MIRROR_MOVE,
+    AGILITY,
+    DRILL_PECK,             # moves learnt by level up <--^
+    BIDE,
+    DOUBLE_EDGE,
+    DOUBLE_TEAM,
+    MIMIC,
+    RAGE,
+    RAZOR_WIND,
+    REST,
+    SKY_ATTACK,
+    SUBSTITUTE,
+    SWIFT,
+    TAKE_DOWN,
+    WHIRLWIND,             
+    TOXIC,                  # moves learnt by TM <--^
+    FLY                     # HM move
+)
+FEAROW_LEARNSET = SPEAROW_LEARNSET + (HYPER_BEAM)
+
+EKANS_LEARNSET = (
+    LEER,
+    WRAP,
+    POISON_STING,
+    BITE,
+    GLARE,
+    SCREECH,
+    ACID,                   # moves learnt by level up <--^
+    BIDE,
+    BODY_SLAM,
+    DOUBLE_EDGE,
+    DOUBLE_TEAM,
+    DIG,
+    EARTHQUAKE,
+    MEGA_DRAIN,
+    FISSURE,
+    MIMIC,
+    RAGE,
+    REST,
+    ROCK_SLIDE,
+    SUBSTITUTE,
+    SKULL_BASH,
+    TAKE_DOWN,
+    TOXIC,                  # moves learnt by TM <--^
+    STRENGTH                # HM move
+)
+ARBOK_LEARNSET = EKANS_LEARNSET + (HYPER_BEAM)
+
