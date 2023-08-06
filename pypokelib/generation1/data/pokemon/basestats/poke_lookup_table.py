@@ -163,7 +163,7 @@ DEX_HELPER_STR_TO_NUM = {
 # * accidental changes to the Pokedex.
 # * Also, we can search by index, which is marginally faster than searching by
 # * key, but more importantly, it incurs less memory overhead than a dict.
-POKEDEX = (
+POKEDEX: tuple[dc.FullPokeEntry] = (
     dc.MISSINGNO_ENTRY,
     dc.BULBASAUR_DEX_ENTRY,
     dc.IVYSAUR_DEX_ENTRY,

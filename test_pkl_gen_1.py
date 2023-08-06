@@ -1,5 +1,6 @@
 """Tests Generation 1 Functionality"""
 import unittest
+from typing import List
 from pypokelib import PokemonGen1 as Pokemon
 
 class Test_Pokemon(unittest.TestCase):
@@ -71,7 +72,20 @@ class Test_Pokemon(unittest.TestCase):
         self.assertEqual(Pokemon("Eevee").get_growth_rate(), "Medium Fast")
         self.assertEqual(Pokemon("Mew").get_growth_rate(), "Medium Slow")
 
-
+    def test_pokemon_party(self):
+        my_party: List[Pokemon] = []
+        my_party.append(Pokemon("Bulbasaur"))
+        my_party.append(Pokemon("Charmander"))
+        my_party.append(Pokemon("Squirtle"))
+        my_party.append(Pokemon("Pikachu"))
+        my_party.append(Pokemon("Eevee"))
+        my_party.append(Pokemon("Mew"))
+        self.assertEqual(my_party[0].get_dex_num(), 1)
+        self.assertEqual(my_party[1].get_dex_num(), 4)
+        self.assertEqual(my_party[2].get_dex_num(), 7)
+        self.assertEqual(my_party[3].get_dex_num(), 25)
+        self.assertEqual(my_party[4].get_dex_num(), 133)
+        self.assertEqual(my_party[5].get_dex_num(), 151)
 
 
 if __name__ == '__main__':
