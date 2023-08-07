@@ -16,7 +16,14 @@ BaseMoves = NamedTuple(
         ("effect", str),
     ],
 )
-
+NO_MOVE = BaseMoves(
+    name="No Move",
+    type="Normal",
+    power=0,
+    accuracy=0,
+    pp=0,
+    effect="No effect.",
+)
 ABSORB = BaseMoves(
     name="Absorb",
     type="Grass",

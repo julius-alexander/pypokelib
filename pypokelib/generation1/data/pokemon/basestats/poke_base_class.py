@@ -1,5 +1,8 @@
 """Defines Pokemon class and its methods"""
 from typing import NamedTuple
+from pypokelib.generation1.constants.dex_consts import CHARIZARD_DEX_ENTRY
+
+from pypokelib.generation1.constants.move_consts import BaseMoves
 from .poke_lookup_table import POKEDEX, get_mon
 
 # * Option 2 - Base Class for each Pokemon
@@ -32,8 +35,8 @@ class Pokemon:
         # default values, intended to be used as "public variables"
         self.level = 1
         self.current_stats = self._base_stats
-        self.learned_moves = POKEDEX[self._dex_num].tmhm_learnset[0]
-        self.current_moves = [POKEDEX[self._dex_num].tmhm_learnset[0], "-", "-", "-"]
+        self.learned_moves = POKEDEX[self._dex_num].tmhm_learnset
+        self.current_moves = [POKEDEX[self._dex_num].tmhm_learnset[0], POKEDEX[self._dex_num].tmhm_learnset[1], POKEDEX[self._dex_num].tmhm_learnset[2], POKEDEX[self._dex_num].tmhm_learnset[3]]
         self.nature = "Hardy"
 
     def get_dex_num(self) -> int:
@@ -78,7 +81,6 @@ class Pokemon:
             f"Stats: {self.current_stats}\n"
             f"Nature: {self.nature}\n"
             f"Types: {self._types[0]} {self._types[1]}\n"
-            f"Moves: {self.current_moves[0]} {self.current_moves[1]} " \
-            f"{self.current_moves[2]} {self.current_moves[3]}\n" \
-            f"TM/HM Learnset: {self._tmhm_learnset}\n"
+            f"Moves: [{self.current_moves[0].name}] [{self.current_moves[1].name}] " \
+            f"[{self.current_moves[2].name}] [{self.current_moves[3].name}]\n"
         )
