@@ -109,9 +109,19 @@ SQUIRTLE_LEARNSET = (
 WARTORTLE_LEARNSET = SQUIRTLE_LEARNSET
 BLASTOISE_LEARNSET = SQUIRTLE_LEARNSET + (TM15, TM26, TM27)
 
-CATERPIE_LEARNSET = (TACKLE, STRING_SHOT, NO_MOVE, NO_MOVE)
-METAPOD_LEARNSET = HARDEN
-BUTTTERFREE_LEARNSET = (
+CATERPIE_LEARNSET = (
+    TACKLE,
+    STRING_SHOT,
+    NO_MOVE,
+    NO_MOVE
+)
+METAPOD_LEARNSET = (
+    HARDEN,
+    NO_MOVE, 
+    NO_MOVE,
+    NO_MOVE
+)
+BUTTERFREE_LEARNSET = (
     CONFUSION,
     POISON_POWDER,
     PSYBEAM,
@@ -140,8 +150,13 @@ BUTTTERFREE_LEARNSET = (
     TM04,
 )
 
-WEEDLE_LEARNSET = (POISON_STING, STRING_SHOT)
-KAKUNA_LEARNSET = HARDEN
+WEEDLE_LEARNSET = (POISON_STING, STRING_SHOT, NO_MOVE, NO_MOVE)
+KAKUNA_LEARNSET = (
+    HARDEN,
+    NO_MOVE,
+    NO_MOVE,
+    NO_MOVE
+)
 BEEDRILL_LEARNSET = (
     AGILITY,
     FOCUS_ENERGY,
@@ -750,7 +765,7 @@ MANKEY_LEARNSET = (
     TM44,
     TM48,
     TM50,
-    HM04
+    HM04,
 )
 PRIMEAPE_LEARNSET = MANKEY_LEARNSET + (TM15)
 
@@ -776,12 +791,9 @@ GROWLITHE_LEARNSET = (
     TM39,
     TM40,
     TM44,
-    TM50
+    TM50,
 )
-ARCANINE_LEARNSET = GROWLITHE_LEARNSET + (
-    TM15,
-    TM30
-)
+ARCANINE_LEARNSET = GROWLITHE_LEARNSET + (TM15, TM30)
 
 POLIWAG_LEARNSET = (
     BUBBLE,
@@ -808,7 +820,7 @@ POLIWAG_LEARNSET = (
     TM44,
     TM46,
     TM50,
-    HM03
+    HM03,
 )
 POLIWHIRL_LEARNSET = POLIWAG_LEARNSET + (
     TM01,
@@ -819,7 +831,7 @@ POLIWHIRL_LEARNSET = POLIWAG_LEARNSET + (
     TM26,
     TM27,
     TM35,
-    HM04
+    HM04,
 )
 POLIWRATH_LEARNSET = POLIWHIRL_LEARNSET + (
     TM01,
@@ -849,7 +861,7 @@ POLIWRATH_LEARNSET = POLIWHIRL_LEARNSET + (
     TM46,
     TM50,
     HM03,
-    HM04
+    HM04,
 )
 
 ABRA_LEARNSET = (
@@ -876,7 +888,7 @@ ABRA_LEARNSET = (
     TM46,
     TM49,
     TM50,
-    HM05
+    HM05,
 )
 KADABRA_LEARNSET = (
     CONFUSION,
@@ -907,7 +919,7 @@ KADABRA_LEARNSET = (
     TM46,
     TM49,
     TM50,
-    HM05
+    HM05,
 )
 ALAKAZAM_LEARNSET = (
     CONFUSION,
@@ -939,7 +951,7 @@ ALAKAZAM_LEARNSET = (
     TM46,
     TM49,
     TM50,
-    HM05
+    HM05,
 )
 
 MACHOP_LEARNSET = (
@@ -969,7 +981,7 @@ MACHOP_LEARNSET = (
     TM44,
     TM48,
     TM50,
-    HM04
+    HM04,
 )
 MACHOKE_LEARNSET = (
     KARATE_CHOP,
@@ -998,7 +1010,7 @@ MACHOKE_LEARNSET = (
     TM44,
     TM48,
     TM50,
-    HM04
+    HM04,
 )
 MACHAMP_LEARNSET = (
     KARATE_CHOP,
@@ -1028,7 +1040,7 @@ MACHAMP_LEARNSET = (
     TM44,
     TM48,
     TM50,
-    HM04
+    HM04,
 )
 
 BELLSPROUT_LEARNSET = (
@@ -1054,7 +1066,7 @@ BELLSPROUT_LEARNSET = (
     TM34,
     TM44,
     TM50,
-    HM01
+    HM01,
 )
 WEEPINBELL_LEARNSET = (
     ACID,
@@ -1079,7 +1091,7 @@ WEEPINBELL_LEARNSET = (
     TM34,
     TM44,
     TM50,
-    HM01
+    HM01,
 )
 VICTREEBEL_LEARNSET = (
     ACID,
@@ -1106,7 +1118,7 @@ VICTREEBEL_LEARNSET = (
     TM34,
     TM44,
     TM50,
-    HM01
+    HM01,
 )
 
 TENTACOOL_LEARNSET = (
@@ -1136,7 +1148,7 @@ TENTACOOL_LEARNSET = (
     TM40,
     TM44,
     TM50,
-    HM03
+    HM03,
 )
 TENTACRUEL_LEARNSET = (
     ACID,
@@ -1167,7 +1179,7 @@ TENTACRUEL_LEARNSET = (
     TM44,
     TM50,
     HM03,
-    HM01
+    HM01,
 )
 
 GEODUDE_LEARNSET = (
@@ -1197,7 +1209,7 @@ GEODUDE_LEARNSET = (
     TM47,
     TM48,
     TM50,
-    HM04
+    HM04,
 )
 GRAVELER_LEARNSET = (
     TACKLE,
@@ -1226,7 +1238,7 @@ GRAVELER_LEARNSET = (
     TM47,
     TM48,
     TM50,
-    HM04
+    HM04,
 )
 GOLEM_LEARNSET = (
     TACKLE,
@@ -1257,7 +1269,7 @@ GOLEM_LEARNSET = (
     TM47,
     TM48,
     TM50,
-    HM04
+    HM04,
 )
 
 PONYTA_LEARNSET = (
@@ -1282,7 +1294,7 @@ PONYTA_LEARNSET = (
     TM39,
     TM40,
     TM44,
-    TM50
+    TM50,
 )
 RAPIDASH_LEARNSET = (
     EMBER,
@@ -1307,7 +1319,7 @@ RAPIDASH_LEARNSET = (
     TM39,
     TM40,
     TM44,
-    TM50
+    TM50,
 )
 
 SLOWPOKE_LEARNSET = (
@@ -1347,7 +1359,7 @@ SLOWPOKE_LEARNSET = (
     TM50,
     HM03,
     HM04,
-    HM05
+    HM05,
 )
 SLOWBRO_LEARNSET = (
     CONFUSION,
@@ -1392,7 +1404,7 @@ SLOWBRO_LEARNSET = (
     TM50,
     HM03,
     HM04,
-    HM05
+    HM05,
 )
 
 MAGNEMITE_LEARNSET = (
@@ -1418,7 +1430,7 @@ MAGNEMITE_LEARNSET = (
     TM44,
     TM45,
     TM50,
-    HM05
+    HM05,
 )
 MAGNETON_LEARNSET = (
     TACKLE,
@@ -1444,43 +1456,673 @@ MAGNETON_LEARNSET = (
     TM44,
     TM45,
     TM50,
-    HM05
+    HM05,
 )
 
-FARFETCHD_LEARNSET = ()
+FARFETCHD_LEARNSET = (
+    PECK,
+    SAND_ATTACK,
+    LEER,
+    FURY_ATTACK,
+    SWORDS_DANCE,
+    AGILITY,
+    SLASH,
+    TM02,
+    TM03,
+    TM04,
+    TM06,
+    TM08,
+    TM09,
+    TM10,
+    TM20,
+    TM31,
+    TM32,
+    TM33,
+    TM34,
+    TM39,
+    TM40,
+    TM44,
+    TM50,
+    HM01,
+    HM02,
+)
 
-DODUO_LEARNSET = ()
-DODRIO_LEARNSET = ()
+DODUO_LEARNSET = (
+    PECK,
+    GROWL,
+    FURY_ATTACK,
+    DRILL_PECK,
+    RAGE,
+    TRI_ATTACK,
+    AGILITY,
+    TM04,
+    TM06,
+    TM08,
+    TM09,
+    TM10,
+    TM20,
+    TM31,
+    TM32,
+    TM33,
+    TM34,
+    TM40,
+    TM43,
+    TM44,
+    TM49,
+    TM50,
+    HM02,
+)
+DODRIO_LEARNSET = (
+    PECK,
+    GROWL,
+    FURY_ATTACK,
+    DRILL_PECK,
+    RAGE,
+    TRI_ATTACK,
+    AGILITY,
+    TM04,
+    TM06,
+    TM08,
+    TM09,
+    TM10,
+    TM15,
+    TM20,
+    TM31,
+    TM32,
+    TM33,
+    TM34,
+    TM40,
+    TM43,
+    TM44,
+    TM49,
+    TM50,
+    HM02,
+)
 
-SEEL_LEARNSET = ()
-DEWGONG_LEARNSET = ()
+SEEL_LEARNSET = (
+    HEADBUTT,
+    GROWL,
+    AURORA_BEAM,
+    REST,
+    TAKE_DOWN,
+    ICE_BEAM,
+    TM06,
+    TM07,
+    TM08,
+    TM09,
+    TM10,
+    TM11,
+    TM12,
+    TM13,
+    TM14,
+    TM16,
+    TM20,
+    TM31,
+    TM32,
+    TM34,
+    TM40,
+    TM44,
+    TM50,
+    HM03,
+    HM04,
+)
+DEWGONG_LEARNSET = (
+    HEADBUTT,
+    GROWL,
+    AURORA_BEAM,
+    REST,
+    TAKE_DOWN,
+    ICE_BEAM,
+    TM06,
+    TM07,
+    TM08,
+    TM09,
+    TM10,
+    TM11,
+    TM12,
+    TM13,
+    TM14,
+    TM15,
+    TM16,
+    TM20,
+    TM31,
+    TM32,
+    TM34,
+    TM40,
+    TM44,
+    TM50,
+    HM03,
+    HM04,
+)
 
-GRIMER_LEARNSET = ()
-MUK_LEARNSET = ()
+GRIMER_LEARNSET = (
+    POUND,
+    DISABLE,
+    POISON_GAS,
+    MINIMIZE,
+    SLUDGE,
+    HARDEN,
+    SCREECH,
+    ACID_ARMOR,
+    TM06,
+    TM08,
+    TM20,
+    TM21,
+    TM24,
+    TM25,
+    TM31,
+    TM32,
+    TM34,
+    TM36,
+    TM38,
+    TM44,
+    TM47,
+    TM50,
+)
+MUK_LEARNSET = (
+    POUND,
+    DISABLE,
+    POISON_GAS,
+    MINIMIZE,
+    SLUDGE,
+    HARDEN,
+    SCREECH,
+    ACID_ARMOR,
+    TM06,
+    TM08,
+    TM15,
+    TM20,
+    TM21,
+    TM24,
+    TM25,
+    TM31,
+    TM32,
+    TM34,
+    TM36,
+    TM38,
+    TM44,
+    TM47,
+    TM50,
+)
 
-SHELLDER_LEARNSET = ()
-CLOYSTER_LEARNSET = ()
+SHELLDER_LEARNSET = (
+    TACKLE,
+    WITHDRAW,
+    SUPERSONIC,
+    CLAMP,
+    AURORA_BEAM,
+    LEER,
+    ICE_BEAM,
+    TM06,
+    TM09,
+    TM10,
+    TM11,
+    TM12,
+    TM13,
+    TM14,
+    TM20,
+    TM30,
+    TM31,
+    TM32,
+    TM33,
+    TM34,
+    TM36,
+    TM39,
+    TM44,
+    TM47,
+    TM49,
+    TM50,
+    HM03,
+)
+CLOYSTER_LEARNSET = (
+    TACKLE,
+    WITHDRAW,
+    SUPERSONIC,
+    CLAMP,
+    AURORA_BEAM,
+    LEER,
+    ICE_BEAM,
+    SPIKE_CANNON,
+    TM06,
+    TM09,
+    TM10,
+    TM11,
+    TM12,
+    TM13,
+    TM14,
+    TM15,
+    TM20,
+    TM30,
+    TM31,
+    TM32,
+    TM33,
+    TM34,
+    TM36,
+    TM39,
+    TM44,
+    TM47,
+    TM49,
+    TM50,
+    HM03,
+)
 
-GASTLY_LEARNSET = ()
-HAUNTER_LEARNSET = ()
-GENGAR_LEARNSET = ()
+GASTLY_LEARNSET = (
+    LICK,
+    HYPNOSIS,
+    NIGHT_SHADE,
+    CONFUSE_RAY,
+    DREAM_EATER,
+    TM06,
+    TM20,
+    TM21,
+    TM24,
+    TM25,
+    TM29,
+    TM31,
+    TM32,
+    TM34,
+    TM36,
+    TM42,
+    TM44,
+    TM46,
+    TM47,
+    TM50,
+)
+HAUNTER_LEARNSET = (
+    LICK,
+    HYPNOSIS,
+    NIGHT_SHADE,
+    CONFUSE_RAY,
+    DREAM_EATER,
+    TM06,
+    TM20,
+    TM21,
+    TM24,
+    TM25,
+    TM29,
+    TM31,
+    TM32,
+    TM34,
+    TM36,
+    TM42,
+    TM44,
+    TM46,
+    TM47,
+    TM50,
+)
+GENGAR_LEARNSET = (
+    LICK,
+    HYPNOSIS,
+    NIGHT_SHADE,
+    CONFUSE_RAY,
+    DREAM_EATER,
+    TM01,
+    TM05,
+    TM06,
+    TM08,
+    TM09,
+    TM10,
+    TM15,
+    TM17,
+    TM18,
+    TM19,
+    TM20,
+    TM21,
+    TM24,
+    TM25,
+    TM29,
+    TM31,
+    TM32,
+    TM34,
+    TM35,
+    TM36,
+    TM40,
+    TM42,
+    TM44,
+    TM46,
+    TM47,
+    TM50,
+    HM05,
+)
 
-ONIX_LEARNSET = ()
+ONIX_LEARNSET = (
+    SCREECH,
+    TACKLE,
+    BIND,
+    ROCK_THROW,
+    RAGE,
+    SLAM,
+    HARDEN,
+    TM06,
+    TM08,
+    TM09,
+    TM10,
+    TM20,
+    TM26,
+    TM27,
+    TM28,
+    TM31,
+    TM32,
+    TM34,
+    TM36,
+    TM40,
+    TM44,
+    TM47,
+    TM48,
+    TM50,
+    HM04,
+)
 
-DROWZEE_LEARNSET = ()
-HYPNO_LEARNSET = ()
+DROWZEE_LEARNSET = (
+    HYPNOSIS,
+    POUND,
+    DISABLE,
+    CONFUSION,
+    HEADBUTT,
+    POISON_GAS,
+    PSYCHIC,
+    MEDITATE,
+    TM01,
+    TM05,
+    TM06,
+    TM08,
+    TM09,
+    TM10,
+    TM17,
+    TM18,
+    TM19,
+    TM20,
+    TM29,
+    TM30,
+    TM31,
+    TM32,
+    TM33,
+    TM34,
+    TM35,
+    TM40,
+    TM42,
+    TM44,
+    TM45,
+    TM46,
+    TM49,
+    TM50,
+    HM05,
+)
+HYPNO_LEARNSET = (
+    CONFUSION,
+    DISABLE,
+    HYPNOSIS,
+    POUND,
+    HEADBUTT,
+    POISON_GAS,
+    PSYCHIC,
+    MEDITATE,
+    TM01,
+    TM05,
+    TM06,
+    TM08,
+    TM09,
+    TM10,
+    TM15,
+    TM17,
+    TM18,
+    TM19,
+    TM20,
+    TM29,
+    TM30,
+    TM31,
+    TM32,
+    TM33,
+    TM34,
+    TM35,
+    TM40,
+    TM42,
+    TM44,
+    TM45,
+    TM46,
+    TM49,
+    TM50,
+    HM05,
+)
 
-KRABBY_LEARNSET = ()
-KINGLER_LEARNSET = ()
+KRABBY_LEARNSET = (
+    BUBBLE,
+    LEER,
+    VICEGRIP,
+    GUILLOTINE,
+    STOMP,
+    CRABHAMMER,
+    HARDEN,
+    TM03,
+    TM06,
+    TM08,
+    TM09,
+    TM10,
+    TM11,
+    TM12,
+    TM13,
+    TM14,
+    TM20,
+    TM31,
+    TM32,
+    TM34,
+    TM44,
+    TM50,
+    HM01,
+    HM03,
+    HM04,
+)
+KINGLER_LEARNSET = (
+    BUBBLE,
+    LEER,
+    VICEGRIP,
+    GUILLOTINE,
+    STOMP,
+    CRABHAMMER,
+    HARDEN,
+    TM03,
+    TM06,
+    TM08,
+    TM09,
+    TM10,
+    TM11,
+    TM12,
+    TM13,
+    TM14,
+    TM15,
+    TM20,
+    TM31,
+    TM32,
+    TM34,
+    TM44,
+    TM50,
+    HM01,
+    HM03,
+    HM04,
+)
 
-VOLTORB_LEARNSET = ()
-ELECTRODE_LEARNSET = ()
+VOLTORB_LEARNSET = (
+    TACKLE,
+    SCREECH,
+    SONIC_BOOM,
+    SELF_DESTRUCT,
+    LIGHT_SCREEN,
+    SWIFT,
+    EXPLOSION,
+    TM06,
+    TM09,
+    TM20,
+    TM24,
+    TM25,
+    TM30,
+    TM31,
+    TM32,
+    TM33,
+    TM34,
+    TM36,
+    TM39,
+    TM44,
+    TM45,
+    TM47,
+    TM50,
+    HM05,
+)
+ELECTRODE_LEARNSET = (
+    TACKLE,
+    SCREECH,
+    SONIC_BOOM,
+    SELF_DESTRUCT,
+    LIGHT_SCREEN,
+    SWIFT,
+    EXPLOSION,
+    TM06,
+    TM09,
+    TM15,
+    TM20,
+    TM24,
+    TM25,
+    TM30,
+    TM31,
+    TM32,
+    TM33,
+    TM34,
+    TM36,
+    TM39,
+    TM40,
+    TM44,
+    TM45,
+    TM47,
+    TM50,
+    HM05,
+)
 
-EXEGGCUTE_LEARNSET = ()
-EXEGGUTOR_LEARNSET = ()
+EXEGGCUTE_LEARNSET = (
+    BARRAGE,
+    HYPNOSIS,
+    REFLECT,
+    LEECH_SEED,
+    STUN_SPORE,
+    POISON_POWDER,
+    SOLAR_BEAM,
+    SLEEP_POWDER,
+    TM06,
+    TM09,
+    TM10,
+    TM20,
+    TM29,
+    TM30,
+    TM31,
+    TM32,
+    TM33,
+    TM34,
+    TM36,
+    TM37,
+    TM44,
+    TM46,
+    TM47,
+    TM50,
+)
+EXEGGUTOR_LEARNSET = (
+    BARRAGE,
+    HYPNOSIS,
+    REFLECT,
+    LEECH_SEED,
+    STUN_SPORE,
+    POISON_POWDER,
+    SOLAR_BEAM,
+    SLEEP_POWDER,
+    STOMP,
+    TM06,
+    TM09,
+    TM10,
+    TM15,
+    TM20,
+    TM21,
+    TM22,
+    TM29,
+    TM30,
+    TM31,
+    TM32,
+    TM33,
+    TM34,
+    TM36,
+    TM37,
+    TM44,
+    TM46,
+    TM47,
+    TM50,
+    HM04,
+)
 
-CUBONE_LEARNSET = ()
-MAROWAK_LEARNSET = ()
+CUBONE_LEARNSET = (
+    BONE_CLUB,
+    GROWL,
+    LEER,
+    FOCUS_ENERGY,
+    THRASH,
+    BONEMERANG,
+    RAGE,
+    TM01,
+    TM05,
+    TM06,
+    TM08,
+    TM09,
+    TM10,
+    TM11,
+    TM12,
+    TM13,
+    TM14,
+    TM17,
+    TM18,
+    TM19,
+    TM20,
+    TM26,
+    TM27,
+    TM28,
+    TM31,
+    TM32,
+    TM34,
+    TM38,
+    TM40,
+    TM44,
+    TM50,
+    HM04,
+)
+MAROWAK_LEARNSET = (
+    BONE_CLUB,
+    GROWL,
+    LEER,
+    FOCUS_ENERGY,
+    THRASH,
+    BONEMERANG,
+    RAGE,
+    TM01,
+    TM05,
+    TM06,
+    TM08,
+    TM09,
+    TM10,
+    TM11,
+    TM12,
+    TM13,
+    TM14,
+    TM15,
+    TM17,
+    TM18,
+    TM19,
+    TM20,
+    TM26,
+    TM27,
+    TM28,
+    TM31,
+    TM32,
+    TM34,
+    TM38,
+    TM40,
+    TM44,
+    TM50,
+    HM04,
+)
 
 HITMONLEE_LEARNSET = ()
 HITMONCHAN_LEARNSET = ()

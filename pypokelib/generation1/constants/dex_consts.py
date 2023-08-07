@@ -36,10 +36,6 @@ FullPokeEntry = NamedTuple(
     ],
 )
 
-# ! CHANGE LEARNSETS TO ACTUAL LEARNABLE MOVES
-# ! CHANGE LEARNSETS TO ACTUAL LEARNABLE MOVES
-# ! CHANGE LEARNSETS TO ACTUAL LEARNABLE MOVES
-# ! RECOMMENDATION: ASSIGN LEARNSETS REFERENCED IN A SEPARATE FILE
 
 MISSINGNO_ENTRY = FullPokeEntry(
     name="MissingNo.",
@@ -71,7 +67,7 @@ VENUSAUR_DEX_ENTRY = FullPokeEntry(
     types=["Grass", "Poison"],
     base_exp=236,
     growth_rate="Medium Slow",
-    tmhm_learnset=ml.VENUSAUR_LEARNSET,
+    tmhm_learnset=ml.VENUSAUR_LEARNSET
 )
 CHARMANDER_DEX_ENTRY = FullPokeEntry(
     name="Charmander",
@@ -79,7 +75,7 @@ CHARMANDER_DEX_ENTRY = FullPokeEntry(
     types=["Fire", ""],
     base_exp=62,
     growth_rate="Medium Slow",
-    tmhm_learnset=ml.CHARMANDER_LEARNSET,
+    tmhm_learnset=ml.CHARMANDER_LEARNSET
 )
 CHARMELEON_DEX_ENTRY = FullPokeEntry(
     name="Charmeleon",
@@ -87,7 +83,7 @@ CHARMELEON_DEX_ENTRY = FullPokeEntry(
     types=["Fire", ""],
     base_exp=142,
     growth_rate="Medium Slow",
-    tmhm_learnset=(),
+    tmhm_learnset=ml.CHARMELEON_LEARNSET
 )
 CHARIZARD_DEX_ENTRY = FullPokeEntry(
     name="Charizard",
@@ -95,7 +91,7 @@ CHARIZARD_DEX_ENTRY = FullPokeEntry(
     types=["Fire", "Flying"],
     base_exp=240,
     growth_rate="Medium Slow",
-    tmhm_learnset=(),
+    tmhm_learnset=ml.CHARIZARD_LEARNSET
 )
 SQUIRTLE_DEX_ENTRY = FullPokeEntry(
     name="Squirtle",
@@ -103,7 +99,7 @@ SQUIRTLE_DEX_ENTRY = FullPokeEntry(
     types=["Water", ""],
     base_exp=63,
     growth_rate="Medium Slow",
-    tmhm_learnset=ml.SQUIRTLE_LEARNSET,
+    tmhm_learnset=ml.SQUIRTLE_LEARNSET
 )
 WARTORTLE_DEX_ENTRY = FullPokeEntry(
     name="Wartortle",
@@ -111,7 +107,7 @@ WARTORTLE_DEX_ENTRY = FullPokeEntry(
     types=["Water", ""],
     base_exp=142,
     growth_rate="Medium Slow",
-    tmhm_learnset=(),
+    tmhm_learnset=ml.WARTORTLE_LEARNSET
 )
 BLASTOISE_DEX_ENTRY = FullPokeEntry(
     name="Blastoise",
@@ -119,7 +115,7 @@ BLASTOISE_DEX_ENTRY = FullPokeEntry(
     types=["Water", ""],
     base_exp=239,
     growth_rate="Medium Slow",
-    tmhm_learnset=(),
+    tmhm_learnset=ml.BLASTOISE_LEARNSET
 )
 CATERPIE_DEX_ENTRY = FullPokeEntry(
     name="Caterpie",
@@ -127,7 +123,7 @@ CATERPIE_DEX_ENTRY = FullPokeEntry(
     types=["Bug", ""],
     base_exp=39,
     growth_rate="Medium Fast",
-    tmhm_learnset=ml.CATERPIE_LEARNSET,
+    tmhm_learnset=ml.CATERPIE_LEARNSET
 )
 METAPOD_DEX_ENTRY = FullPokeEntry(
     name="Metapod",
@@ -135,7 +131,7 @@ METAPOD_DEX_ENTRY = FullPokeEntry(
     types=["Bug", ""],
     base_exp=72,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset=ml.METAPOD_LEARNSET
 )
 BUTTERFREE_DEX_ENTRY = FullPokeEntry(
     name="Butterfree",
@@ -143,7 +139,7 @@ BUTTERFREE_DEX_ENTRY = FullPokeEntry(
     types=["Bug", "Flying"],
     base_exp=178,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset=ml.BUTTERFREE_LEARNSET
 )
 WEEDLE_DEX_ENTRY = FullPokeEntry(
     name="Weedle",
@@ -151,7 +147,7 @@ WEEDLE_DEX_ENTRY = FullPokeEntry(
     types=["Bug", "Poison"],
     base_exp=39,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset=ml.WEEDLE_LEARNSET
 )
 KAKUNA_DEX_ENTRY = FullPokeEntry(
     name="Kakuna",
@@ -159,7 +155,7 @@ KAKUNA_DEX_ENTRY = FullPokeEntry(
     types=["Bug", "Poison"],
     base_exp=72,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset=ml.KAKUNA_LEARNSET
 )
 BEEDRILL_DEX_ENTRY = FullPokeEntry(
     name="Beedrill",
@@ -167,7 +163,7 @@ BEEDRILL_DEX_ENTRY = FullPokeEntry(
     types=["Bug", "Poison"],
     base_exp=178,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset=ml.BEEDRILL_LEARNSET
 )
 PIDGEY_DEX_ENTRY = FullPokeEntry(
     name="Pidgey",
@@ -175,7 +171,7 @@ PIDGEY_DEX_ENTRY = FullPokeEntry(
     types=["Normal", "Flying"],
     base_exp=50,
     growth_rate="Medium Slow",
-    tmhm_learnset=(),
+    tmhm_learnset=ml.PIDGEY_LEARNSET
 )
 PIDGEOTTO_DEX_ENTRY = FullPokeEntry(
     name="Pidgeotto",
@@ -183,7 +179,7 @@ PIDGEOTTO_DEX_ENTRY = FullPokeEntry(
     types=["Normal", "Flying"],
     base_exp=122,
     growth_rate="Medium Slow",
-    tmhm_learnset=(),
+    tmhm_learnset=ml.PIDGEOTTO_LEARNSET
 )
 PIDGEOT_DEX_ENTRY = FullPokeEntry(
     name="Pidgeot",
@@ -191,7 +187,7 @@ PIDGEOT_DEX_ENTRY = FullPokeEntry(
     types=["Normal", "Flying"],
     base_exp=211,
     growth_rate="Medium Slow",
-    tmhm_learnset=(),
+    tmhm_learnset=ml.PIDGEOT_LEARNSET
 )
 RATTATA_DEX_ENTRY = FullPokeEntry(
     name="Rattata",
@@ -199,7 +195,7 @@ RATTATA_DEX_ENTRY = FullPokeEntry(
     types=["Normal", ""],
     base_exp=51,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset=ml.RATTATA_LEARNSET
 )
 RATICATE_DEX_ENTRY = FullPokeEntry(
     name="Raticate",
@@ -207,7 +203,7 @@ RATICATE_DEX_ENTRY = FullPokeEntry(
     types=["Normal", ""],
     base_exp=145,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset=ml.RATICATE_LEARNSET
 )
 SPEAROW_DEX_ENTRY = FullPokeEntry(
     name="Spearow",
@@ -215,7 +211,7 @@ SPEAROW_DEX_ENTRY = FullPokeEntry(
     types=["Normal", "Flying"],
     base_exp=52,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset=ml.SPEAROW_LEARNSET
 )
 FEAROW_DEX_ENTRY = FullPokeEntry(
     name="Fearow",
@@ -223,7 +219,7 @@ FEAROW_DEX_ENTRY = FullPokeEntry(
     types=["Normal", "Flying"],
     base_exp=155,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset=ml.FEAROW_LEARNSET
 )
 EKANS_DEX_ENTRY = FullPokeEntry(
     name="Ekans",
@@ -231,7 +227,7 @@ EKANS_DEX_ENTRY = FullPokeEntry(
     types=["Poison", ""],
     base_exp=58,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset=ml.EKANS_LEARNSET
 )
 ARBOK_DEX_ENTRY = FullPokeEntry(
     name="Arbok",
@@ -239,7 +235,7 @@ ARBOK_DEX_ENTRY = FullPokeEntry(
     types=["Poison", ""],
     base_exp=153,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset=ml.ARBOK_LEARNSET
 )
 PIKACHU_DEX_ENTRY = FullPokeEntry(
     name="Pikachu",
@@ -247,7 +243,7 @@ PIKACHU_DEX_ENTRY = FullPokeEntry(
     types=["Electric", ""],
     base_exp=82,
     growth_rate="Medium Fast",
-    tmhm_learnset=ml.PIKACHU_LEARNSET,
+    tmhm_learnset=ml.PIKACHU_LEARNSET
 )
 RAICHU_DEX_ENTRY = FullPokeEntry(
     name="Raichu",
@@ -255,7 +251,7 @@ RAICHU_DEX_ENTRY = FullPokeEntry(
     types=["Electric", ""],
     base_exp=122,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset=ml.RAICHU_LEARNSET
 )
 SANDSHREW_DEX_ENTRY = FullPokeEntry(
     name="Sandshrew",
@@ -263,7 +259,7 @@ SANDSHREW_DEX_ENTRY = FullPokeEntry(
     types=["Ground", ""],
     base_exp=60,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset=ml.SANDSHREW_LEARNSET
 )
 SANDSLASH_DEX_ENTRY = FullPokeEntry(
     name="Sandslash",
@@ -271,7 +267,7 @@ SANDSLASH_DEX_ENTRY = FullPokeEntry(
     types=["Ground", ""],
     base_exp=158,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset=ml.SANDSLASH_LEARNSET
 )
 NIDORAN_F_DEX_ENTRY = FullPokeEntry(
     name="Nidoran♀",
@@ -279,7 +275,7 @@ NIDORAN_F_DEX_ENTRY = FullPokeEntry(
     types=["Poison", ""],
     base_exp=55,
     growth_rate="Medium Slow",
-    tmhm_learnset=(),
+    tmhm_learnset=ml.NIDORAN_F_LEARNSET
 )
 NIDORINA_DEX_ENTRY = FullPokeEntry(
     name="Nidorina",
@@ -287,7 +283,7 @@ NIDORINA_DEX_ENTRY = FullPokeEntry(
     types=["Poison", ""],
     base_exp=128,
     growth_rate="Medium Slow",
-    tmhm_learnset=(),
+    tmhm_learnset=ml.NIDORINA_LEARNSET
 )
 NIDOQUEEN_DEX_ENTRY = FullPokeEntry(
     name="Nidoqueen",
@@ -295,7 +291,7 @@ NIDOQUEEN_DEX_ENTRY = FullPokeEntry(
     types=["Poison", "Ground"],
     base_exp=223,
     growth_rate="Medium Slow",
-    tmhm_learnset=(),
+    tmhm_learnset=ml.NIDOQUEEN_LEARNSET
 )
 NIDORAN_M_DEX_ENTRY = FullPokeEntry(
     name="Nidoran♂",
@@ -303,7 +299,7 @@ NIDORAN_M_DEX_ENTRY = FullPokeEntry(
     types=["Poison", ""],
     base_exp=55,
     growth_rate="Medium Slow",
-    tmhm_learnset=(),
+    tmhm_learnset=ml.NIDORAN_M_LEARNSET
 )
 NIDORINO_DEX_ENTRY = FullPokeEntry(
     name="Nidorino",
@@ -311,7 +307,7 @@ NIDORINO_DEX_ENTRY = FullPokeEntry(
     types=["Poison", ""],
     base_exp=128,
     growth_rate="Medium Slow",
-    tmhm_learnset=(),
+    tmhm_learnset=ml.NIDORINO_LEARNSET
 )
 NIDOKING_DEX_ENTRY = FullPokeEntry(
     name="Nidoking",
@@ -319,7 +315,7 @@ NIDOKING_DEX_ENTRY = FullPokeEntry(
     types=["Poison", "Ground"],
     base_exp=223,
     growth_rate="Medium Slow",
-    tmhm_learnset=(),
+    tmhm_learnset=ml.NIDOKING_LEARNSET
 )
 CLEFAIRY_DEX_ENTRY = FullPokeEntry(
     name="Clefairy",
@@ -327,7 +323,7 @@ CLEFAIRY_DEX_ENTRY = FullPokeEntry(
     types=["Normal", ""],
     base_exp=113,
     growth_rate="Fast",
-    tmhm_learnset=ml.CLEFAIRY_LEARNSET,
+    tmhm_learnset=ml.CLEFAIRY_LEARNSET
 )
 CLEFABLE_DEX_ENTRY = FullPokeEntry(
     name="Clefable",
@@ -335,7 +331,7 @@ CLEFABLE_DEX_ENTRY = FullPokeEntry(
     types=["Normal", ""],
     base_exp=213,
     growth_rate="Fast",
-    tmhm_learnset=(),
+    tmhm_learnset=ml.CLEFABLE_LEARNSET
 )
 VULPIX_DEX_ENTRY = FullPokeEntry(
     name="Vulpix",
@@ -343,7 +339,7 @@ VULPIX_DEX_ENTRY = FullPokeEntry(
     types=["Fire", ""],
     base_exp=60,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset=ml.VULPIX_LEARNSET
 )
 NINETALES_DEX_ENTRY = FullPokeEntry(
     name="Ninetales",
@@ -351,7 +347,7 @@ NINETALES_DEX_ENTRY = FullPokeEntry(
     types=["Fire", ""],
     base_exp=177,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset=ml.NINETALES_LEARNSET
 )
 JIGGLYPUFF_DEX_ENTRY = FullPokeEntry(
     name="Jigglypuff",
@@ -359,7 +355,7 @@ JIGGLYPUFF_DEX_ENTRY = FullPokeEntry(
     types=["Normal", ""],
     base_exp=76,
     growth_rate="Fast",
-    tmhm_learnset=(),
+    tmhm_learnset=ml.JIGGLYPUFF_LEARNSET
 )
 WIGGLYTUFF_DEX_ENTRY = FullPokeEntry(
     name="Wigglytuff",
@@ -367,7 +363,7 @@ WIGGLYTUFF_DEX_ENTRY = FullPokeEntry(
     types=["Normal", ""],
     base_exp=109,
     growth_rate="Fast",
-    tmhm_learnset=(),
+    tmhm_learnset=ml.WIGGLYTUFF_LEARNSET
 )
 ZUBAT_DEX_ENTRY = FullPokeEntry(
     name="Zubat",
@@ -375,7 +371,7 @@ ZUBAT_DEX_ENTRY = FullPokeEntry(
     types=["Poison", "Flying"],
     base_exp=49,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset=ml.ZUBAT_LEARNSET
 )
 GOLBAT_DEX_ENTRY = FullPokeEntry(
     name="Golbat",
@@ -383,7 +379,7 @@ GOLBAT_DEX_ENTRY = FullPokeEntry(
     types=["Poison", "Flying"],
     base_exp=159,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset=ml.GOLBAT_LEARNSET
 )
 ODDISH_DEX_ENTRY = FullPokeEntry(
     name="Oddish",
@@ -391,7 +387,7 @@ ODDISH_DEX_ENTRY = FullPokeEntry(
     types=["Grass", "Poison"],
     base_exp=64,
     growth_rate="Medium Slow",
-    tmhm_learnset=(),
+    tmhm_learnset=ml.ODDISH_LEARNSET
 )
 GLOOM_DEX_ENTRY = FullPokeEntry(
     name="Gloom",
@@ -399,7 +395,7 @@ GLOOM_DEX_ENTRY = FullPokeEntry(
     types=["Grass", "Poison"],
     base_exp=138,
     growth_rate="Medium Slow",
-    tmhm_learnset=(),
+    tmhm_learnset=ml.GLOOM_LEARNSET
 )
 VILEPLUME_DEX_ENTRY = FullPokeEntry(
     name="Vileplume",
@@ -407,7 +403,7 @@ VILEPLUME_DEX_ENTRY = FullPokeEntry(
     types=["Grass", "Poison"],
     base_exp=216,
     growth_rate="Medium Slow",
-    tmhm_learnset=(),
+    tmhm_learnset=ml.VILEPLUME_LEARNSET
 )
 PARAS_DEX_ENTRY = FullPokeEntry(
     name="Paras",
@@ -415,7 +411,7 @@ PARAS_DEX_ENTRY = FullPokeEntry(
     types=["Bug", "Grass"],
     base_exp=57,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset=ml.PARAS_LEARNSET
 )
 PARASECT_DEX_ENTRY = FullPokeEntry(
     name="Parasect",
@@ -423,7 +419,7 @@ PARASECT_DEX_ENTRY = FullPokeEntry(
     types=["Bug", "Grass"],
     base_exp=142,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset=ml.PARASECT_LEARNSET
 )
 VENONAT_DEX_ENTRY = FullPokeEntry(
     name="Venonat",
@@ -431,7 +427,7 @@ VENONAT_DEX_ENTRY = FullPokeEntry(
     types=["Bug", "Poison"],
     base_exp=61,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset=ml.VENONAT_LEARNSET
 )
 VENOMOTH_DEX_ENTRY = FullPokeEntry(
     name="Venomoth",
@@ -439,7 +435,7 @@ VENOMOTH_DEX_ENTRY = FullPokeEntry(
     types=["Bug", "Poison"],
     base_exp=158,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset=ml.VENOMOTH_LEARNSET
 )
 DIGLETT_DEX_ENTRY = FullPokeEntry(
     name="Diglett",
@@ -447,7 +443,7 @@ DIGLETT_DEX_ENTRY = FullPokeEntry(
     types=["Ground", ""],
     base_exp=53,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset=ml.DIGLETT_LEARNSET
 )
 DUGTRIO_DEX_ENTRY = FullPokeEntry(
     name="Dugtrio",
@@ -455,7 +451,7 @@ DUGTRIO_DEX_ENTRY = FullPokeEntry(
     types=["Ground", ""],
     base_exp=149,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset=ml.DUGTRIO_LEARNSET
 )
 MEOWTH_DEX_ENTRY = FullPokeEntry(
     name="Meowth",
@@ -463,7 +459,7 @@ MEOWTH_DEX_ENTRY = FullPokeEntry(
     types=["Normal", ""],
     base_exp=58,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset=ml.MEOWTH_LEARNSET
 )
 PERSIAN_DEX_ENTRY = FullPokeEntry(
     name="Persian",
@@ -471,7 +467,7 @@ PERSIAN_DEX_ENTRY = FullPokeEntry(
     types=["Normal", ""],
     base_exp=154,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset=ml.PERSIAN_LEARNSET
 )
 PSYDUCK_DEX_ENTRY = FullPokeEntry(
     name="Psyduck",
@@ -479,7 +475,7 @@ PSYDUCK_DEX_ENTRY = FullPokeEntry(
     types=["Water", ""],
     base_exp=64,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset=ml.PSYDUCK_LEARNSET
 )
 GOLDUCK_DEX_ENTRY = FullPokeEntry(
     name="Golduck",
@@ -487,7 +483,7 @@ GOLDUCK_DEX_ENTRY = FullPokeEntry(
     types=["Water", ""],
     base_exp=175,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset=ml.GOLDUCK_LEARNSET
 )
 MANKEY_DEX_ENTRY = FullPokeEntry(
     name="Mankey",
@@ -495,7 +491,7 @@ MANKEY_DEX_ENTRY = FullPokeEntry(
     types=["Fighting", ""],
     base_exp=61,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset=ml.MANKEY_LEARNSET
 )
 PRIMEAPE_DEX_ENTRY = FullPokeEntry(
     name="Primeape",
@@ -503,7 +499,7 @@ PRIMEAPE_DEX_ENTRY = FullPokeEntry(
     types=["Fighting", ""],
     base_exp=159,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset=ml.PRIMEAPE_LEARNSET
 )
 GROWLITHE_DEX_ENTRY = FullPokeEntry(
     name="Growlithe",
@@ -511,7 +507,7 @@ GROWLITHE_DEX_ENTRY = FullPokeEntry(
     types=["Fire", ""],
     base_exp=70,
     growth_rate="Slow",
-    tmhm_learnset=(),
+    tmhm_learnset=ml.GROWLITHE_LEARNSET
 )
 ARCANINE_DEX_ENTRY = FullPokeEntry(
     name="Arcanine",
@@ -519,7 +515,7 @@ ARCANINE_DEX_ENTRY = FullPokeEntry(
     types=["Fire", ""],
     base_exp=194,
     growth_rate="Slow",
-    tmhm_learnset=(),
+    tmhm_learnset=ml.ARCANINE_LEARNSET
 )
 POLIWAG_DEX_ENTRY = FullPokeEntry(
     name="Poliwag",
@@ -527,7 +523,7 @@ POLIWAG_DEX_ENTRY = FullPokeEntry(
     types=["Water", ""],
     base_exp=60,
     growth_rate="Medium Slow",
-    tmhm_learnset=(),
+    tmhm_learnset=ml.POLIWAG_LEARNSET
 )
 POLIWHIRL_DEX_ENTRY = FullPokeEntry(
     name="Poliwhirl",
@@ -535,7 +531,7 @@ POLIWHIRL_DEX_ENTRY = FullPokeEntry(
     types=["Water", ""],
     base_exp=135,
     growth_rate="Medium Slow",
-    tmhm_learnset=(),
+    tmhm_learnset=ml.POLIWHIRL_LEARNSET
 )
 POLIWRATH_DEX_ENTRY = FullPokeEntry(
     name="Poliwrath",
@@ -543,7 +539,7 @@ POLIWRATH_DEX_ENTRY = FullPokeEntry(
     types=["Water", "Fighting"],
     base_exp=185,
     growth_rate="Medium Slow",
-    tmhm_learnset=(),
+    tmhm_learnset=ml.POLIWRATH_LEARNSET
 )
 ABRA_DEX_ENTRY = FullPokeEntry(
     name="Abra",
@@ -551,7 +547,7 @@ ABRA_DEX_ENTRY = FullPokeEntry(
     types=["Psychic", ""],
     base_exp=62,
     growth_rate="Medium Slow",
-    tmhm_learnset=(),
+    tmhm_learnset=ml.ABRA_LEARNSET
 )
 KADABRA_DEX_ENTRY = FullPokeEntry(
     name="Kadabra",
@@ -559,7 +555,7 @@ KADABRA_DEX_ENTRY = FullPokeEntry(
     types=["Psychic", ""],
     base_exp=140,
     growth_rate="Medium Slow",
-    tmhm_learnset=(),
+    tmhm_learnset=ml.KADABRA_LEARNSET
 )
 ALAKAZAM_DEX_ENTRY = FullPokeEntry(
     name="Alakazam",
@@ -567,7 +563,7 @@ ALAKAZAM_DEX_ENTRY = FullPokeEntry(
     types=["Psychic", ""],
     base_exp=221,
     growth_rate="Medium Slow",
-    tmhm_learnset=(),
+    tmhm_learnset=ml.ALAKAZAM_LEARNSET
 )
 MACHOP_DEX_ENTRY = FullPokeEntry(
     name="Machop",
@@ -575,15 +571,14 @@ MACHOP_DEX_ENTRY = FullPokeEntry(
     types=["Fighting", ""],
     base_exp=61,
     growth_rate="Medium Slow",
-    tmhm_learnset=(),
+    tmhm_learnset=ml.MACHOP_LEARNSET
 )
-MACHOKE_DEX_ENTRY = FullPokeEntry(
-    name="Machoke",
+MACHOKE_DEX_ENTRY = FullPokeEntry( name="Machoke",
     base_stats=BaseStats(405, 80, 100, 70, 50, 60, 45),
     types=["Fighting", ""],
     base_exp=142,
     growth_rate="Medium Slow",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.MACHOKE_LEARNSET
 )
 MACHAMP_DEX_ENTRY = FullPokeEntry(
     name="Machamp",
@@ -591,7 +586,7 @@ MACHAMP_DEX_ENTRY = FullPokeEntry(
     types=["Fighting", ""],
     base_exp=227,
     growth_rate="Medium Slow",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.MACHAMP_LEARNSET
 )
 BELLSPROUT_DEX_ENTRY = FullPokeEntry(
     name="Bellsprout",
@@ -599,7 +594,7 @@ BELLSPROUT_DEX_ENTRY = FullPokeEntry(
     types=["Grass", "Poison"],
     base_exp=60,
     growth_rate="Medium Slow",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.BELLSPROUT_LEARNSET
 )
 WEEPINBELL_DEX_ENTRY = FullPokeEntry(
     name="Weepinbell",
@@ -607,7 +602,7 @@ WEEPINBELL_DEX_ENTRY = FullPokeEntry(
     types=["Grass", "Poison"],
     base_exp=137,
     growth_rate="Medium Slow",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.WEEPINBELL_LEARNSET
 )
 VICTREEBEL_DEX_ENTRY = FullPokeEntry(
     name="Victreebel",
@@ -615,7 +610,7 @@ VICTREEBEL_DEX_ENTRY = FullPokeEntry(
     types=["Grass", "Poison"],
     base_exp=216,
     growth_rate="Medium Slow",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.VICTREEBEL_LEARNSET
 )
 TENTACOOL_DEX_ENTRY = FullPokeEntry(
     name="Tentacool",
@@ -623,7 +618,7 @@ TENTACOOL_DEX_ENTRY = FullPokeEntry(
     types=["Water", "Poison"],
     base_exp=67,
     growth_rate="Slow",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.TENTACOOL_LEARNSET
 )
 TENTACRUEL_DEX_ENTRY = FullPokeEntry(
     name="Tentacruel",
@@ -631,7 +626,7 @@ TENTACRUEL_DEX_ENTRY = FullPokeEntry(
     types=["Water", "Poison"],
     base_exp=180,
     growth_rate="Slow",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.TENTACRUEL_LEARNSET
 )
 GEODUDE_DEX_ENTRY = FullPokeEntry(
     name="Geodude",
@@ -639,7 +634,7 @@ GEODUDE_DEX_ENTRY = FullPokeEntry(
     types=["Rock", "Ground"],
     base_exp=60,
     growth_rate="Medium Slow",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.GEODUDE_LEARNSET
 )
 GRAVELER_DEX_ENTRY = FullPokeEntry(
     name="Graveler",
@@ -647,7 +642,7 @@ GRAVELER_DEX_ENTRY = FullPokeEntry(
     types=["Rock", "Ground"],
     base_exp=137,
     growth_rate="Medium Slow",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.GRAVELER_LEARNSET
 )
 GOLEM_DEX_ENTRY = FullPokeEntry(
     name="Golem",
@@ -655,7 +650,7 @@ GOLEM_DEX_ENTRY = FullPokeEntry(
     types=["Rock", "Ground"],
     base_exp=218,
     growth_rate="Medium Slow",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.GOLEM_LEARNSET
 )
 PONYTA_DEX_ENTRY = FullPokeEntry(
     name="Ponyta",
@@ -663,7 +658,7 @@ PONYTA_DEX_ENTRY = FullPokeEntry(
     types=["Fire", ""],
     base_exp=82,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.PONYTA_LEARNSET
 )
 RAPIDASH_DEX_ENTRY = FullPokeEntry(
     name="Rapidash",
@@ -671,7 +666,7 @@ RAPIDASH_DEX_ENTRY = FullPokeEntry(
     types=["Fire", ""],
     base_exp=175,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.RAPIDASH_LEARNSET
 )
 SLOWPOKE_DEX_ENTRY = FullPokeEntry(
     name="Slowpoke",
@@ -679,7 +674,7 @@ SLOWPOKE_DEX_ENTRY = FullPokeEntry(
     types=["Water", "Psychic"],
     base_exp=63,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.SLOWPOKE_LEARNSET
 )
 SLOWBRO_DEX_ENTRY = FullPokeEntry(
     name="Slowbro",
@@ -687,7 +682,7 @@ SLOWBRO_DEX_ENTRY = FullPokeEntry(
     types=["Water", "Psychic"],
     base_exp=172,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.SLOWBRO_LEARNSET
 )
 MAGNEMITE_DEX_ENTRY = FullPokeEntry(
     name="Magnemite",
@@ -695,7 +690,7 @@ MAGNEMITE_DEX_ENTRY = FullPokeEntry(
     types=["Electric", ""],
     base_exp=65,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.MAGNEMITE_LEARNSET
 )
 MAGNETON_DEX_ENTRY = FullPokeEntry(
     name="Magneton",
@@ -703,7 +698,7 @@ MAGNETON_DEX_ENTRY = FullPokeEntry(
     types=["Electric", ""],
     base_exp=163,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.MAGNETON_LEARNSET
 )
 FARFETCHD_DEX_ENTRY = FullPokeEntry(
     name="Farfetch'd",
@@ -711,7 +706,7 @@ FARFETCHD_DEX_ENTRY = FullPokeEntry(
     types=["Normal", "Flying"],
     base_exp=94,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.FARFETCHD_LEARNSET
 )
 DODUO_DEX_ENTRY = FullPokeEntry(
     name="Doduo",
@@ -719,7 +714,7 @@ DODUO_DEX_ENTRY = FullPokeEntry(
     types=["Normal", "Flying"],
     base_exp=62,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.DODUO_LEARNSET
 )
 DODRIO_DEX_ENTRY = FullPokeEntry(
     name="Dodrio",
@@ -727,7 +722,7 @@ DODRIO_DEX_ENTRY = FullPokeEntry(
     types=["Normal", "Flying"],
     base_exp=161,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.DODRIO_LEARNSET
 )
 SEEL_DEX_ENTRY = FullPokeEntry(
     name="Seel",
@@ -735,7 +730,7 @@ SEEL_DEX_ENTRY = FullPokeEntry(
     types=["Water", ""],
     base_exp=65,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.SEEL_LEARNSET
 )
 DEWGONG_DEX_ENTRY = FullPokeEntry(
     name="Dewgong",
@@ -743,7 +738,7 @@ DEWGONG_DEX_ENTRY = FullPokeEntry(
     types=["Water", "Ice"],
     base_exp=166,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.DEWGONG_LEARNSET
 )
 GRIMER_DEX_ENTRY = FullPokeEntry(
     name="Grimer",
@@ -751,7 +746,7 @@ GRIMER_DEX_ENTRY = FullPokeEntry(
     types=["Poison", ""],
     base_exp=65,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.GRIMER_LEARNSET
 )
 MUK_DEX_ENTRY = FullPokeEntry(
     name="Muk",
@@ -759,7 +754,7 @@ MUK_DEX_ENTRY = FullPokeEntry(
     types=["Poison", ""],
     base_exp=175,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.MUK_LEARNSET
 )
 SHELLDER_DEX_ENTRY = FullPokeEntry(
     name="Shellder",
@@ -767,7 +762,7 @@ SHELLDER_DEX_ENTRY = FullPokeEntry(
     types=["Water", ""],
     base_exp=61,
     growth_rate="Slow",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.SHELLDER_LEARNSET
 )
 CLOYSTER_DEX_ENTRY = FullPokeEntry(
     name="Cloyster",
@@ -775,7 +770,7 @@ CLOYSTER_DEX_ENTRY = FullPokeEntry(
     types=["Water", "Ice"],
     base_exp=184,
     growth_rate="Slow",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.CLOYSTER_LEARNSET
 )
 GASTLY_DEX_ENTRY = FullPokeEntry(
     name="Gastly",
@@ -783,7 +778,7 @@ GASTLY_DEX_ENTRY = FullPokeEntry(
     types=["Ghost", "Poison"],
     base_exp=62,
     growth_rate="Medium Slow",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.GASTLY_LEARNSET
 )
 HAUNTER_DEX_ENTRY = FullPokeEntry(
     name="Haunter",
@@ -791,7 +786,7 @@ HAUNTER_DEX_ENTRY = FullPokeEntry(
     types=["Ghost", "Poison"],
     base_exp=142,
     growth_rate="Medium Slow",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.HAUNTER_LEARNSET
 )
 GENGAR_DEX_ENTRY = FullPokeEntry(
     name="Gengar",
@@ -799,7 +794,7 @@ GENGAR_DEX_ENTRY = FullPokeEntry(
     types=["Ghost", "Poison"],
     base_exp=225,
     growth_rate="Medium Slow",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.GENGAR_LEARNSET
 )
 ONIX_DEX_ENTRY = FullPokeEntry(
     name="Onix",
@@ -807,7 +802,7 @@ ONIX_DEX_ENTRY = FullPokeEntry(
     types=["Rock", "Ground"],
     base_exp=77,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.ONIX_LEARNSET
 )
 DROWZEE_DEX_ENTRY = FullPokeEntry(
     name="Drowzee",
@@ -815,7 +810,7 @@ DROWZEE_DEX_ENTRY = FullPokeEntry(
     types=["Psychic", ""],
     base_exp=66,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.DROWZEE_LEARNSET
 )
 HYPNO_DEX_ENTRY = FullPokeEntry(
     name="Hypno",
@@ -823,7 +818,7 @@ HYPNO_DEX_ENTRY = FullPokeEntry(
     types=["Psychic", ""],
     base_exp=169,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.HYPNO_LEARNSET
 )
 KRABBY_DEX_ENTRY = FullPokeEntry(
     name="Krabby",
@@ -831,7 +826,7 @@ KRABBY_DEX_ENTRY = FullPokeEntry(
     types=["Water", ""],
     base_exp=65,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.KRABBY_LEARNSET
 )
 KINGLER_DEX_ENTRY = FullPokeEntry(
     name="Kingler",
@@ -839,7 +834,7 @@ KINGLER_DEX_ENTRY = FullPokeEntry(
     types=["Water", ""],
     base_exp=166,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.KINGLER_LEARNSET
 )
 VOLTORB_DEX_ENTRY = FullPokeEntry(
     name="Voltorb",
@@ -847,7 +842,7 @@ VOLTORB_DEX_ENTRY = FullPokeEntry(
     types=["Electric", ""],
     base_exp=66,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.VOLTORB_LEARNSET
 )
 ELECTRODE_DEX_ENTRY = FullPokeEntry(
     name="Electrode",
@@ -855,7 +850,7 @@ ELECTRODE_DEX_ENTRY = FullPokeEntry(
     types=["Electric", ""],
     base_exp=172,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.ELECTRODE_LEARNSET
 )
 EXEGGCUTE_DEX_ENTRY = FullPokeEntry(
     name="Exeggcute",
@@ -863,7 +858,7 @@ EXEGGCUTE_DEX_ENTRY = FullPokeEntry(
     types=["Grass", "Psychic"],
     base_exp=65,
     growth_rate="Slow",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.EXEGGCUTE_LEARNSET
 )
 EXEGGUTOR_DEX_ENTRY = FullPokeEntry(
     name="Exeggutor",
@@ -871,7 +866,7 @@ EXEGGUTOR_DEX_ENTRY = FullPokeEntry(
     types=["Grass", "Psychic"],
     base_exp=186,
     growth_rate="Slow",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.EXEGGUTOR_LEARNSET
 )
 CUBONE_DEX_ENTRY = FullPokeEntry(
     name="Cubone",
@@ -879,7 +874,7 @@ CUBONE_DEX_ENTRY = FullPokeEntry(
     types=["Ground", ""],
     base_exp=64,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.CUBONE_LEARNSET
 )
 MAROWAK_DEX_ENTRY = FullPokeEntry(
     name="Marowak",
@@ -887,7 +882,7 @@ MAROWAK_DEX_ENTRY = FullPokeEntry(
     types=["Ground", ""],
     base_exp=149,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.MAROWAK_LEARNSET
 )
 HITMONLEE_DEX_ENTRY = FullPokeEntry(
     name="Hitmonlee",
@@ -895,7 +890,7 @@ HITMONLEE_DEX_ENTRY = FullPokeEntry(
     types=["Fighting", ""],
     base_exp=159,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.HITMONLEE_LEARNSET
 )
 HITMONCHAN_DEX_ENTRY = FullPokeEntry(
     name="Hitmonchan",
@@ -903,7 +898,7 @@ HITMONCHAN_DEX_ENTRY = FullPokeEntry(
     types=["Fighting", ""],
     base_exp=159,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.HITMONCHAN_LEARNSET
 )
 LICKITUNG_DEX_ENTRY = FullPokeEntry(
     name="Lickitung",
@@ -911,7 +906,7 @@ LICKITUNG_DEX_ENTRY = FullPokeEntry(
     types=["Normal", ""],
     base_exp=77,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.LICKITUNG_LEARNSET
 )
 KOFFING_DEX_ENTRY = FullPokeEntry(
     name="Koffing",
@@ -919,7 +914,7 @@ KOFFING_DEX_ENTRY = FullPokeEntry(
     types=["Poison", ""],
     base_exp=68,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.KOFFING_LEARNSET
 )
 WEEZING_DEX_ENTRY = FullPokeEntry(
     name="Weezing",
@@ -927,7 +922,7 @@ WEEZING_DEX_ENTRY = FullPokeEntry(
     types=["Poison", ""],
     base_exp=172,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.WEEZING_LEARNSET
 )
 RHYHORN_DEX_ENTRY = FullPokeEntry(
     name="Rhyhorn",
@@ -935,7 +930,7 @@ RHYHORN_DEX_ENTRY = FullPokeEntry(
     types=["Ground", "Rock"],
     base_exp=69,
     growth_rate="Slow",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.RHYHORN_LEARNSET
 )
 RHYDON_DEX_ENTRY = FullPokeEntry(
     name="Rhydon",
@@ -943,7 +938,7 @@ RHYDON_DEX_ENTRY = FullPokeEntry(
     types=["Ground", "Rock"],
     base_exp=170,
     growth_rate="Slow",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.RHYDON_LEARNSET
 )
 CHANSEY_DEX_ENTRY = FullPokeEntry(
     name="Chansey",
@@ -951,7 +946,7 @@ CHANSEY_DEX_ENTRY = FullPokeEntry(
     types=["Normal", ""],
     base_exp=395,
     growth_rate="Fast",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.CHANSEY_LEARNSET
 )
 TANGELA_DEX_ENTRY = FullPokeEntry(
     name="Tangela",
@@ -959,7 +954,7 @@ TANGELA_DEX_ENTRY = FullPokeEntry(
     types=["Grass", ""],
     base_exp=166,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.TANGELA_LEARNSET
 )
 KANGASKHAN_DEX_ENTRY = FullPokeEntry(
     name="Kangaskhan",
@@ -967,7 +962,7 @@ KANGASKHAN_DEX_ENTRY = FullPokeEntry(
     types=["Normal", ""],
     base_exp=172,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.KANGASKHAN_LEARNSET
 )
 HORSEA_DEX_ENTRY = FullPokeEntry(
     name="Horsea",
@@ -975,7 +970,7 @@ HORSEA_DEX_ENTRY = FullPokeEntry(
     types=["Water", ""],
     base_exp=59,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.HORSEA_LEARNSET
 )
 SEADRA_DEX_ENTRY = FullPokeEntry(
     name="Seadra",
@@ -983,7 +978,7 @@ SEADRA_DEX_ENTRY = FullPokeEntry(
     types=["Water", ""],
     base_exp=154,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.SEADRA_LEARNSET
 )
 GOLDEEN_DEX_ENTRY = FullPokeEntry(
     name="Goldeen",
@@ -991,7 +986,7 @@ GOLDEEN_DEX_ENTRY = FullPokeEntry(
     types=["Water", ""],
     base_exp=64,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.GOLDEEN_LEARNSET
 )
 SEAKING_DEX_ENTRY = FullPokeEntry(
     name="Seaking",
@@ -999,7 +994,7 @@ SEAKING_DEX_ENTRY = FullPokeEntry(
     types=["Water", ""],
     base_exp=158,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.SEAKING_LEARNSET
 )
 STARYU_DEX_ENTRY = FullPokeEntry(
     name="Staryu",
@@ -1007,7 +1002,7 @@ STARYU_DEX_ENTRY = FullPokeEntry(
     types=["Water", ""],
     base_exp=68,
     growth_rate="Slow",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.STARYU_LEARNSET
 )
 STARMIE_DEX_ENTRY = FullPokeEntry(
     name="Starmie",
@@ -1015,7 +1010,7 @@ STARMIE_DEX_ENTRY = FullPokeEntry(
     types=["Water", "Psychic"],
     base_exp=182,
     growth_rate="Slow",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.STARMIE_LEARNSET
 )
 MR_MIME_DEX_ENTRY = FullPokeEntry(
     name="Mr. Mime",
@@ -1023,7 +1018,7 @@ MR_MIME_DEX_ENTRY = FullPokeEntry(
     types=["Psychic", ""],
     base_exp=161,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.MR_MIME_LEARNSET
 )
 SCYTHER_DEX_ENTRY = FullPokeEntry(
     name="Scyther",
@@ -1031,7 +1026,7 @@ SCYTHER_DEX_ENTRY = FullPokeEntry(
     types=["Bug", "Flying"],
     base_exp=100,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.SCYTHER_LEARNSET
 )
 JYNX_DEX_ENTRY = FullPokeEntry(
     name="Jynx",
@@ -1039,7 +1034,7 @@ JYNX_DEX_ENTRY = FullPokeEntry(
     types=["Ice", "Psychic"],
     base_exp=159,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.JYNX_LEARNSET
 )
 ELECTABUZZ_DEX_ENTRY = FullPokeEntry(
     name="Electabuzz",
@@ -1047,7 +1042,7 @@ ELECTABUZZ_DEX_ENTRY = FullPokeEntry(
     types=["Electric", ""],
     base_exp=172,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.ELECTABUZZ_LEARNSET
 )
 MAGMAR_DEX_ENTRY = FullPokeEntry(
     name="Magmar",
@@ -1055,7 +1050,7 @@ MAGMAR_DEX_ENTRY = FullPokeEntry(
     types=["Fire", ""],
     base_exp=173,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.MAGMAR_LEARNSET
 )
 PINSIR_DEX_ENTRY = FullPokeEntry(
     name="Pinsir",
@@ -1063,7 +1058,7 @@ PINSIR_DEX_ENTRY = FullPokeEntry(
     types=["Bug", ""],
     base_exp=175,
     growth_rate="Slow",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.PINSIR_LEARNSET
 )
 TAUROS_DEX_ENTRY = FullPokeEntry(
     name="Tauros",
@@ -1071,7 +1066,7 @@ TAUROS_DEX_ENTRY = FullPokeEntry(
     types=["Normal", ""],
     base_exp=172,
     growth_rate="Slow",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.TAUROS_LEARNSET
 )
 MAGIKARP_DEX_ENTRY = FullPokeEntry(
     name="Magikarp",
@@ -1079,7 +1074,7 @@ MAGIKARP_DEX_ENTRY = FullPokeEntry(
     types=["Water", ""],
     base_exp=40,
     growth_rate="Slow",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.MAGIKARP_LEARNSET
 )
 GYARADOS_DEX_ENTRY = FullPokeEntry(
     name="Gyarados",
@@ -1087,7 +1082,7 @@ GYARADOS_DEX_ENTRY = FullPokeEntry(
     types=["Water", "Flying"],
     base_exp=189,
     growth_rate="Slow",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.GYARADOS_LEARNSET
 )
 LAPRAS_DEX_ENTRY = FullPokeEntry(
     name="Lapras",
@@ -1095,7 +1090,7 @@ LAPRAS_DEX_ENTRY = FullPokeEntry(
     types=["Water", "Ice"],
     base_exp=187,
     growth_rate="Slow",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.LAPRAS_LEARNSET
 )
 DITTO_DEX_ENTRY = FullPokeEntry(
     name="Ditto",
@@ -1103,7 +1098,7 @@ DITTO_DEX_ENTRY = FullPokeEntry(
     types=["Normal", ""],
     base_exp=61,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.DITTO_LEARNSET
 )
 EEVEE_DEX_ENTRY = FullPokeEntry(
     name="Eevee",
@@ -1111,7 +1106,7 @@ EEVEE_DEX_ENTRY = FullPokeEntry(
     types=["Normal", ""],
     base_exp=65,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.EEVEE_LEARNSET
 )
 VAPOREON_DEX_ENTRY = FullPokeEntry(
     name="Vaporeon",
@@ -1119,7 +1114,7 @@ VAPOREON_DEX_ENTRY = FullPokeEntry(
     types=["Water", ""],
     base_exp=184,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.VAPOREON_LEARNSET
 )
 JOLTEON_DEX_ENTRY = FullPokeEntry(
     name="Jolteon",
@@ -1127,7 +1122,7 @@ JOLTEON_DEX_ENTRY = FullPokeEntry(
     types=["Electric", ""],
     base_exp=184,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.JOLTEON_LEARNSET
 )
 FLAREON_DEX_ENTRY = FullPokeEntry(
     name="Flareon",
@@ -1135,7 +1130,7 @@ FLAREON_DEX_ENTRY = FullPokeEntry(
     types=["Fire", ""],
     base_exp=184,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.FLAREON_LEARNSET
 )
 PORYGON_DEX_ENTRY = FullPokeEntry(
     name="Porygon",
@@ -1143,7 +1138,7 @@ PORYGON_DEX_ENTRY = FullPokeEntry(
     types=["Normal", ""],
     base_exp=79,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.PORYGON_LEARNSET
 )
 OMANYTE_DEX_ENTRY = FullPokeEntry(
     name="Omanyte",
@@ -1151,7 +1146,7 @@ OMANYTE_DEX_ENTRY = FullPokeEntry(
     types=["Rock", "Water"],
     base_exp=71,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.OMANYTE_LEARNSET
 )
 OMASTAR_DEX_ENTRY = FullPokeEntry(
     name="Omastar",
@@ -1159,7 +1154,7 @@ OMASTAR_DEX_ENTRY = FullPokeEntry(
     types=["Rock", "Water"],
     base_exp=173,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.OMASTAR_LEARNSET
 )
 KABUTO_DEX_ENTRY = FullPokeEntry(
     name="Kabuto",
@@ -1167,7 +1162,7 @@ KABUTO_DEX_ENTRY = FullPokeEntry(
     types=["Rock", "Water"],
     base_exp=71,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.KABUTO_LEARNSET
 )
 KABUTOPS_DEX_ENTRY = FullPokeEntry(
     name="Kabutops",
@@ -1175,7 +1170,7 @@ KABUTOPS_DEX_ENTRY = FullPokeEntry(
     types=["Rock", "Water"],
     base_exp=173,
     growth_rate="Medium Fast",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.KABUTOPS_LEARNSET
 )
 AERODACTYL_DEX_ENTRY = FullPokeEntry(
     name="Aerodactyl",
@@ -1183,7 +1178,7 @@ AERODACTYL_DEX_ENTRY = FullPokeEntry(
     types=["Rock", "Flying"],
     base_exp=180,
     growth_rate="Slow",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.AERODACTYL_LEARNSET
 )
 SNORLAX_DEX_ENTRY = FullPokeEntry(
     name="Snorlax",
@@ -1191,7 +1186,7 @@ SNORLAX_DEX_ENTRY = FullPokeEntry(
     types=["Normal", ""],
     base_exp=189,
     growth_rate="Slow",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.SNORLAX_LEARNSET
 )
 ARTICUNO_DEX_ENTRY = FullPokeEntry(
     name="Articuno",
@@ -1199,7 +1194,7 @@ ARTICUNO_DEX_ENTRY = FullPokeEntry(
     types=["Ice", "Flying"],
     base_exp=261,
     growth_rate="Slow",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.ARTICUNO_LEARNSET
 )
 ZAPDOS_DEX_ENTRY = FullPokeEntry(
     name="Zapdos",
@@ -1207,7 +1202,7 @@ ZAPDOS_DEX_ENTRY = FullPokeEntry(
     types=["Electric", "Flying"],
     base_exp=261,
     growth_rate="Slow",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.ZAPDOS_LEARNSET
 )
 MOLTRES_DEX_ENTRY = FullPokeEntry(
     name="Moltres",
@@ -1215,7 +1210,7 @@ MOLTRES_DEX_ENTRY = FullPokeEntry(
     types=["Fire", "Flying"],
     base_exp=261,
     growth_rate="Slow",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.MOLTRES_LEARNSET
 )
 DRATINI_DEX_ENTRY = FullPokeEntry(
     name="Dratini",
@@ -1223,7 +1218,7 @@ DRATINI_DEX_ENTRY = FullPokeEntry(
     types=["Dragon", ""],
     base_exp=60,
     growth_rate="Slow",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.DRATINI_LEARNSET
 )
 DRAGONAIR_DEX_ENTRY = FullPokeEntry(
     name="Dragonair",
@@ -1231,7 +1226,7 @@ DRAGONAIR_DEX_ENTRY = FullPokeEntry(
     types=["Dragon", ""],
     base_exp=147,
     growth_rate="Slow",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.DRAGONAIR_LEARNSET
 )
 DRAGONITE_DEX_ENTRY = FullPokeEntry(
     name="Dragonite",
@@ -1239,7 +1234,7 @@ DRAGONITE_DEX_ENTRY = FullPokeEntry(
     types=["Dragon", "Flying"],
     base_exp=270,
     growth_rate="Slow",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.DRAGONITE_LEARNSET
 )
 MEWTWO_DEX_ENTRY = FullPokeEntry(
     name="Mewtwo",
@@ -1247,7 +1242,7 @@ MEWTWO_DEX_ENTRY = FullPokeEntry(
     types=["Psychic", ""],
     base_exp=306,
     growth_rate="Slow",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.MEWTWO_LEARNSET
 )
 MEW_DEX_ENTRY = FullPokeEntry(
     name="Mew",
@@ -1255,5 +1250,5 @@ MEW_DEX_ENTRY = FullPokeEntry(
     types=["Psychic", ""],
     base_exp=270,
     growth_rate="Medium Slow",
-    tmhm_learnset=(),
+    tmhm_learnset= ml.MEW_LEARNSET
 )

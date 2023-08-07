@@ -1,8 +1,7 @@
 """Defines Pokemon class and its methods"""
 from typing import NamedTuple
-from pypokelib.generation1.constants.dex_consts import CHARIZARD_DEX_ENTRY
 
-from pypokelib.generation1.constants.move_consts import BaseMoves
+from pypokelib.generation1.constants.move_consts import *
 from .poke_lookup_table import POKEDEX, get_mon
 
 # * Option 2 - Base Class for each Pokemon
@@ -35,9 +34,24 @@ class Pokemon:
         # default values, intended to be used as "public variables"
         self.level = 1
         self.current_stats = self._base_stats
-        self.learned_moves = POKEDEX[self._dex_num].tmhm_learnset
-        self.current_moves = [POKEDEX[self._dex_num].tmhm_learnset[0], POKEDEX[self._dex_num].tmhm_learnset[1], POKEDEX[self._dex_num].tmhm_learnset[2], POKEDEX[self._dex_num].tmhm_learnset[3]]
+        self.learned_moves: tuple[BaseMoves] = POKEDEX[self._dex_num].tmhm_learnset
+        self.current_moves = [NO_MOVE, NO_MOVE, NO_MOVE, NO_MOVE]
         self.nature = "Hardy"
+        self.set_base_moves()
+    
+    def set_base_moves(self) -> None:
+        """Set the base (Lvl. 1) moves of the Pokemon"""
+        if len(self.learned_moves) == 0:
+            self.current_moves = [NO_MOVE, NO_MOVE, NO_MOVE, NO_MOVE]
+        elif len(self.learned_moves) == 1:
+            self.current_moves = [self.learned_moves[0], NO_MOVE, NO_MOVE, NO_MOVE]
+        elif len(self.learned_moves) == 2:
+            self.current_moves = [self.learned_moves[0], self.learned_moves[1], NO_MOVE, NO_MOVE]
+        elif len(self.learned_moves) == 3:
+            self.current_moves = [self.learned_moves[0], self.learned_moves[1], self.learned_moves[2], NO_MOVE]
+        elif len(self.learned_moves) >= 4:
+            self.current_moves = [self.learned_moves[0], self.learned_moves[1], self.learned_moves[2], self.learned_moves[3]]
+
 
     def get_dex_num(self) -> int:
         """Return the Pokedex number of the Pokemon"""

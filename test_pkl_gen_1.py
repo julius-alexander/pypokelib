@@ -4,6 +4,10 @@ from typing import List
 from pypokelib import PokemonGen1 as Pokemon
 
 class Test_Pokemon(unittest.TestCase):
+    def test_pokemon_no_raises(self):
+        for i in range(1, 152):
+            print(Pokemon(i))
+
     def test_pokemon_get_dex_num_by_str(self):
         """Test the initialization of the Pokemon class:\n
         Return the Pokedex number of the Pokemon given its species name"""
