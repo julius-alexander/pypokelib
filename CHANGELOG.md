@@ -9,14 +9,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
-## [Unreleaed] ========================================================================================================
+## [Unreleased] 
 - Support for unique learnsets of all Pokemon
 - Include functionality between Pokemon and moves
 
 
 
 
-## [0.1.1] - 2023-08-04 ===============================================================================================
+## [0.1.1] - 2023-08-04 
 
 ## Fixed
 - Hellish imports à la Java. No more "from pypokelib.generation1.data.pokemon.basestats.poke_base_class import Pokemon"
@@ -24,7 +24,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Added
 - Not really *added* but started work on moves and movesets. Much more to come
 
-## [0.1.0] - 2023-08-03 ===============================================================================================
+
+## [0.1.0] - 2023-08-03 
 
 ### Added
 - Fully functional core feature, Pokemon() constructor, callable outside of class module (main.py)
@@ -34,7 +35,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Changed
 - Old code was moved to... _OLD_CODE directory... how original
 
-## [0.1.0-beta.3] - 2023-08-03 =======================================================================================
+
+## [0.1.0-beta.3] - 2023-08-03 
 
 ### Added
 - Preliminary performance tests (yes, yes, premature optimization == bad, just wanted to take a spin around the block)
@@ -42,7 +44,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Removed
 - Unnecessary helper table (converted int->str to search by str and return str anyway??? huh???)
 
-## [0.1.0-beta.2] - 2023-08-03 =======================================================================================
+
+## [0.1.0-beta.2] - 2023-08-03 
 
 ### Added
 - Inits to each directory, effectively making each directory a Python package
@@ -53,7 +56,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Pokemon base class constructor, more robust (methods, data members), uses fast lookup operations
 - Renamed certain files, see GitHub repo for more details
 
-## [0.1.0-beta.1] - 2023-08-02 =======================================================================================
+
+## [0.1.0-beta.1] - 2023-08-02 
 
 ### Added
 - Committed to the idea of a single base Pokemon class: much simpler and easier to maintain
@@ -66,14 +70,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Removed
 - Abra class, and the idea of having a separate class for each all 151 Pokemon
 
-## [0.1.0-alpha.2] - 2023-08-01 =======================================================================================
+
+## [0.1.0-alpha.2] - 2023-08-01 
 
 ### Added
 - This version has initial insights of how I want(ed) to call certain methods when completed with pypokelib
 - At this point, I was still considering having a class for each of 151 pokemon, but...
 - Began work on a Pokemon base class, rather than making a dedicated class for all 151
 
-## [0.1.0-alpha.1] - 2023-08-01 =======================================================================================
+
+## [0.1.0-alpha.1] - 2023-08-01 
 
 ### Added
 - Created initial repository, threw around initial ideas for library structure
@@ -81,7 +87,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Brainstormed ideas for how to instanstiate pokemon objects, and what data to track
 - Fiddled around with datasets
 
-## - Links to previous versions =======================================================================================
+
+## - Links to previous versions 
 
 [unreleased]: https://github.com/whatever-path-idk-right-now/HEAD
 
