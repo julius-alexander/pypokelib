@@ -10,11 +10,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 ## [Unreleased] 
-- Support for unique learnsets of all Pokemon
-- Include functionality between Pokemon and moves
+- UNSURE
+- Gen2 Pokemon/Moves or Gen1 audio/gfx ?
 
 
 
+## [0.2.0] - 2023-08-07 
+
+## Added
+- All Pokemon have their learnsets updated!
+- TM/HM constants, for ability to reference like my_bulbasaur.can_learn(TM35) later
+
+## Fixed
+- SOME unnecessary/redundant code...
 
 ## [0.1.1] - 2023-08-04 
 
